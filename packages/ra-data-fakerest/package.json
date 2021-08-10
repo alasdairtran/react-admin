@@ -1,5 +1,5 @@
 {
-    "name": "ra-data-fakerest",
+    "name": "@mochilabs/ra-data-fakerest",
     "version": "3.13.5",
     "description": "JSON Server data provider for react-admin",
     "main": "lib/index.js",
@@ -44,6 +44,6 @@
         "rimraf": "^2.6.3"
     },
     "peerDependencies": {
-        "ra-core": "^3.9.0"
+        "@mochilabs/ra-core": "^3.9.0"
     }
 }

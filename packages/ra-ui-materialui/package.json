@@ -1,5 +1,5 @@
 {
-    "name": "ra-ui-materialui",
+    "name": "@mochilabs/ra-ui-materialui",
     "version": "3.17.1",
     "description": "UI Components for react-admin with MaterialUI",
     "files": [
@@ -36,8 +36,8 @@
         "final-form": "^4.20.2",
         "final-form-arrays": "^3.0.2",
         "ignore-styles": "~5.0.1",
-        "ra-core": "^3.17.1",
-        "ra-test": "^3.17.1",
+        "@mochilabs/ra-core": "^3.17.1",
+        "@mochilabs/ra-test": "^3.17.1",
         "react": "^17.0.0",
         "react-dom": "^17.0.0",
         "react-final-form": "^6.5.2",
@@ -55,7 +55,7 @@
         "@material-ui/styles": "^4.11.2",
         "final-form": "^4.20.2",
         "final-form-arrays": "^3.0.2",
-        "ra-core": "^3.14.0",
+        "@mochilabs/ra-core": "^3.14.0",
         "react": "^16.9.0 || ^17.0.0",
         "react-dom": "^16.9.0 || ^17.0.0",
         "react-final-form": "^6.5.2",
@@ -68,7 +68,7 @@
     "dependencies": {
         "autosuggest-highlight": "^3.1.1",
         "classnames": "~2.2.5",
-        "connected-react-router": "^6.5.2",
+        "@mochilabs/connected-react-router": "^6.5.2",
         "css-mediaquery": "^0.1.2",
         "downshift": "3.2.7",
         "inflection": "~1.12.0",

@@ -1,5 +1,5 @@
 {
-    "name": "ra-data-simple-rest",
+    "name": "@mochilabs/ra-data-simple-rest",
     "version": "3.17.1",
     "description": "Simple REST data provider for react-admin",
     "main": "lib/index.js",
@@ -32,6 +32,6 @@
         "rimraf": "^2.6.3"
     },
     "peerDependencies": {
-        "ra-core": "^3.9.0"
+        "@mochilabs/ra-core": "^3.9.0"
     }
 }

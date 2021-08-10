@@ -1,5 +1,5 @@
 {
-    "name": "ra-language-english",
+    "name": "@mochilabs/ra-language-english",
     "version": "3.17.1",
     "description": "English messages for react-admin, the frontend framework for building admin applications on top of REST/GraphQL services",
     "repository": {
@@ -22,7 +22,7 @@
         "watch": "tsc --outDir esm --module es2015 --watch"
     },
     "dependencies": {
-        "ra-core": "^3.17.1"
+        "@mochilabs/ra-core": "^3.17.1"
     },
     "keywords": [
         "react",
