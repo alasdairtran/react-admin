@@ -1,22 +1,20 @@
-import React, {
-    FunctionComponent,
-    Children,
-    cloneElement,
-    isValidElement,
-    ReactElement,
-} from 'react';
-import PropTypes from 'prop-types';
-import { shallowEqual } from 'react-redux';
-import { useDropzone, DropzoneOptions } from 'react-dropzone';
-import { makeStyles } from '@material-ui/core/styles';
 import FormHelperText from '@material-ui/core/FormHelperText';
+import { makeStyles } from '@material-ui/core/styles';
+import { InputProps, useInput, useTranslate } from '@mochilabs/ra-core';
 import classnames from 'classnames';
-import { useInput, useTranslate, InputProps } from 'ra-core';
-
-import Labeled from './Labeled';
+import PropTypes from 'prop-types';
+import React, {
+    Children,
+    cloneElement, FunctionComponent, isValidElement,
+    ReactElement
+} from 'react';
+import { DropzoneOptions, useDropzone } from 'react-dropzone';
+import { shallowEqual } from 'react-redux';
 import FileInputPreview from './FileInputPreview';
-import sanitizeInputRestProps from './sanitizeInputRestProps';
 import InputHelperText from './InputHelperText';
+import Labeled from './Labeled';
+import sanitizeInputRestProps from './sanitizeInputRestProps';
+
 
 const useStyles = makeStyles(
     theme => ({

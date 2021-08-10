@@ -1,15 +1,15 @@
-import * as React from 'react';
-import expect from 'expect';
+import { renderWithRedux } from '@mochilabs/ra-test';
 import { render, waitFor } from '@testing-library/react';
+import expect from 'expect';
 import { createMemoryHistory } from 'history';
+import * as React from 'react';
 import { Router } from 'react-router-dom';
-import { renderWithRedux } from 'ra-test';
-
+import SingleFieldList from '../list/SingleFieldList';
 import ReferenceManyField, {
-    ReferenceManyFieldView,
+    ReferenceManyFieldView
 } from './ReferenceManyField';
 import TextField from './TextField';
-import SingleFieldList from '../list/SingleFieldList';
+
 
 describe('<ReferenceManyField />', () => {
     const defaultProps = {

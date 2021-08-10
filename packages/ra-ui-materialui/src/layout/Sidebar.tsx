@@ -1,11 +1,11 @@
+import { Drawer, DrawerProps, Theme, useMediaQuery } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+import { ReduxState, setSidebarVisibility, useLocale } from '@mochilabs/ra-core';
+import lodashGet from 'lodash/get';
+import PropTypes from 'prop-types';
 import * as React from 'react';
 import { ReactElement } from 'react';
-import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
-import { Drawer, DrawerProps, useMediaQuery, Theme } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
-import lodashGet from 'lodash/get';
-import { setSidebarVisibility, ReduxState, useLocale } from 'ra-core';
 import { ClassesOverride } from '../types';
 
 export const DRAWER_WIDTH = 240;

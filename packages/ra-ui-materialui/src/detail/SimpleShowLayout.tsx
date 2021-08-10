@@ -1,11 +1,11 @@
-import * as React from 'react';
-import { Children, isValidElement, cloneElement, ReactNode } from 'react';
-import PropTypes from 'prop-types';
+import { Record } from '@mochilabs/ra-core';
 import classnames from 'classnames';
-import { Record } from 'ra-core';
-
-import CardContentInner from '../layout/CardContentInner';
+import PropTypes from 'prop-types';
+import * as React from 'react';
+import { Children, cloneElement, isValidElement, ReactNode } from 'react';
 import Labeled from '../input/Labeled';
+import CardContentInner from '../layout/CardContentInner';
+
 
 const sanitizeRestProps = ({
     children,

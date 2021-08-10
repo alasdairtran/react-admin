@@ -1,12 +1,12 @@
-import * as React from 'react';
-import expect from 'expect';
-import { fireEvent } from '@testing-library/react';
-import { TranslatableInputs } from './TranslatableInputs';
-import TextInput from './TextInput';
-import { FormWithRedirect, required, useTranslatableContext } from 'ra-core';
-import { renderWithRedux } from 'ra-test';
-import { TranslatableInputsTab } from './TranslatableInputsTab';
 import { Tabs } from '@material-ui/core';
+import { FormWithRedirect, required, useTranslatableContext } from '@mochilabs/ra-core';
+import { renderWithRedux } from '@mochilabs/ra-test';
+import { fireEvent } from '@testing-library/react';
+import expect from 'expect';
+import * as React from 'react';
+import TextInput from './TextInput';
+import { TranslatableInputs } from './TranslatableInputs';
+import { TranslatableInputsTab } from './TranslatableInputsTab';
 
 const record = {
     id: 123,

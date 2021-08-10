@@ -1,17 +1,12 @@
+import {
+    EditContextProvider, getElementsFromRecords, InferredElement, useEditContext, useEditController, useResourceContext
+} from '@mochilabs/ra-core';
+import inflection from 'inflection';
 import * as React from 'react';
 import { useEffect, useState } from 'react';
-import inflection from 'inflection';
-import {
-    useEditController,
-    EditContextProvider,
-    InferredElement,
-    useResourceContext,
-    useEditContext,
-    getElementsFromRecords,
-} from 'ra-core';
-
-import { EditView } from './EditView';
 import editFieldTypes from './editFieldTypes';
+import { EditView } from './EditView';
+
 
 const EditViewGuesser = props => {
     const resource = useResourceContext(props);

@@ -1,12 +1,12 @@
-import * as React from 'react';
-import { ReactElement } from 'react';
-import PropTypes from 'prop-types';
 import {
     EditContextProvider,
     ResourceContextProvider,
     useCheckMinimumRequiredProps,
-    useEditController,
-} from 'ra-core';
+    useEditController
+} from '@mochilabs/ra-core';
+import PropTypes from 'prop-types';
+import * as React from 'react';
+import { ReactElement } from 'react';
 import { EditProps } from '../types';
 import { EditView } from './EditView';
 

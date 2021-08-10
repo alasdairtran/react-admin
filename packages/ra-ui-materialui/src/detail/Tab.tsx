@@ -1,12 +1,12 @@
+import MuiTab, { TabProps as MuiTabProps } from '@material-ui/core/Tab';
+import { Record, useTranslate } from '@mochilabs/ra-core';
+import classnames from 'classnames';
+import PropTypes from 'prop-types';
 import * as React from 'react';
 import { isValidElement, ReactElement, ReactNode } from 'react';
-import PropTypes from 'prop-types';
 import { Link, useLocation } from 'react-router-dom';
-import MuiTab, { TabProps as MuiTabProps } from '@material-ui/core/Tab';
-import { useTranslate, Record } from 'ra-core';
-import classnames from 'classnames';
-
 import Labeled from '../input/Labeled';
+
 
 /**
  * Tab element for the SimpleShowLayout.

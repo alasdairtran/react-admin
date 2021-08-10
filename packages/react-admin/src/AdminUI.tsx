@@ -1,13 +1,13 @@
-import * as React from 'react';
-import { FC } from 'react';
-import { CoreAdminUI, AdminUIProps } from 'ra-core';
+import { AdminUIProps, CoreAdminUI } from '@mochilabs/ra-core';
 import {
     Layout as DefaultLayout,
     LoadingPage,
     Login,
     Logout,
-    NotFound,
-} from 'ra-ui-materialui';
+    NotFound
+} from '@mochilabs/ra-ui-materialui';
+import * as React from 'react';
+import { FC } from 'react';
 
 const AdminUI: FC<AdminUIProps> = props => <CoreAdminUI {...props} />;
 

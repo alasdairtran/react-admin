@@ -1,17 +1,17 @@
-import React from 'react';
-import { useResourceContext } from 'ra-core';
+import { useResourceContext } from '@mochilabs/ra-core';
 import {
     Datagrid as RaDatagrid,
     DatagridProps,
     List as RaList,
-    ListProps,
-} from 'ra-ui-materialui';
-
+    ListProps
+} from '@mochilabs/ra-ui-materialui';
+import React from 'react';
 import {
     useResourceConfiguration,
-    useResourcesConfiguration,
+    useResourcesConfiguration
 } from '../ResourceConfiguration';
 import { getFieldFromFieldDefinition } from './getFieldFromFieldDefinition';
+
 
 export const List = (props: ListProps) => (
     <RaList {...props}>

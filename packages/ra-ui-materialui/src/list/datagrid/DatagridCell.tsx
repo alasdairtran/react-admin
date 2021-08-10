@@ -1,8 +1,8 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
 import TableCell, { TableCellProps } from '@material-ui/core/TableCell';
+import { Record } from '@mochilabs/ra-core';
 import classnames from 'classnames';
-import { Record } from 'ra-core';
+import PropTypes from 'prop-types';
+import * as React from 'react';
 
 const DatagridCell = React.forwardRef<HTMLTableCellElement, DatagridCellProps>(
     ({ className, field, record, basePath, resource, ...rest }, ref) => (

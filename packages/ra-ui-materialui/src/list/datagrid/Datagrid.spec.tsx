@@ -1,7 +1,7 @@
-import * as React from 'react';
+import { ListContextProvider } from '@mochilabs/ra-core';
+import { renderWithRedux } from '@mochilabs/ra-test';
 import { fireEvent } from '@testing-library/react';
-import { ListContextProvider } from 'ra-core';
-import { renderWithRedux } from 'ra-test';
+import * as React from 'react';
 import Datagrid from './Datagrid';
 
 const TitleField = ({ record }: any): JSX.Element => (

@@ -1,11 +1,11 @@
-import * as React from 'react';
-import { FC, useState } from 'react';
-import { useTranslate } from 'ra-core';
-import { InputAdornment, IconButton } from '@material-ui/core';
+import { IconButton, InputAdornment } from '@material-ui/core';
 import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
-
+import { useTranslate } from '@mochilabs/ra-core';
+import * as React from 'react';
+import { FC, useState } from 'react';
 import TextInput, { TextInputProps } from './TextInput';
+
 
 export interface PasswordInputProps extends TextInputProps {
     initiallyVisible?: boolean;

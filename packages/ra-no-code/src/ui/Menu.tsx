@@ -1,18 +1,18 @@
+// @ts-ignore
+import { Theme, useMediaQuery } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+import { ReduxState } from '@mochilabs/ra-core';
+import classnames from 'classnames';
+import lodashGet from 'lodash/get';
+import PropTypes from 'prop-types';
 import * as React from 'react';
 import { ReactNode } from 'react';
-import PropTypes from 'prop-types';
-import { useSelector } from 'react-redux';
-import lodashGet from 'lodash/get';
-// @ts-ignore
-import { useMediaQuery, Theme } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
-import classnames from 'classnames';
-import { ReduxState } from 'ra-core';
-
 import { DashboardMenuItem } from 'react-admin';
-import { NewResourceMenuItem } from './NewResourceMenuItem';
+import { useSelector } from 'react-redux';
 import { useResourcesConfiguration } from '../ResourceConfiguration';
+import { NewResourceMenuItem } from './NewResourceMenuItem';
 import { ResourceMenuItem } from './ResourceMenuItem';
+
 
 export const MENU_WIDTH = 240;
 export const CLOSED_MENU_WIDTH = 55;

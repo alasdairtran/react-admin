@@ -1,12 +1,12 @@
-import * as React from 'react';
-import expect from 'expect';
-import { render } from '@testing-library/react';
-import { ThemeProvider } from '@material-ui/styles';
 import { createMuiTheme } from '@material-ui/core/styles';
-import { ListPaginationContext } from 'ra-core';
-
-import Pagination from './Pagination';
+import { ThemeProvider } from '@material-ui/styles';
+import { ListPaginationContext } from '@mochilabs/ra-core';
+import { render } from '@testing-library/react';
+import expect from 'expect';
+import * as React from 'react';
 import DeviceTestWrapper from '../../layout/DeviceTestWrapper';
+import Pagination from './Pagination';
+
 
 const theme = createMuiTheme();
 

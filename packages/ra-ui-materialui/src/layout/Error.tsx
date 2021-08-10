@@ -1,22 +1,20 @@
-import * as React from 'react';
-import { Fragment, HtmlHTMLAttributes, ErrorInfo } from 'react';
-import PropTypes from 'prop-types';
-import classnames from 'classnames';
 import {
-    Button,
     Accordion,
     AccordionDetails,
-    AccordionSummary,
-    Typography,
+    AccordionSummary, Button, Typography
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import ErrorIcon from '@material-ui/icons/Report';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import History from '@material-ui/icons/History';
-import { useTranslate } from 'ra-core';
-
-import Title, { TitlePropType } from './Title';
+import ErrorIcon from '@material-ui/icons/Report';
+import { useTranslate } from '@mochilabs/ra-core';
+import classnames from 'classnames';
+import PropTypes from 'prop-types';
+import * as React from 'react';
+import { ErrorInfo, Fragment, HtmlHTMLAttributes } from 'react';
 import { ClassesOverride } from '../types';
+import Title, { TitlePropType } from './Title';
+
 
 const useStyles = makeStyles(
     theme => ({

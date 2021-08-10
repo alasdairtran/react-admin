@@ -1,11 +1,11 @@
-import * as React from 'react';
+import { TestTranslationProvider } from '@mochilabs/ra-core';
+import { fireEvent, render, waitFor } from '@testing-library/react';
 import expect from 'expect';
-import { render, fireEvent, waitFor } from '@testing-library/react';
+import * as React from 'react';
 import { Form } from 'react-final-form';
-import { TestTranslationProvider } from 'ra-core';
-
 import SelectArrayInput from './SelectArrayInput';
 import { useCreateSuggestionContext } from './useSupportCreateSuggestion';
+
 
 describe('<SelectArrayInput />', () => {
     const defaultProps = {

@@ -1,6 +1,6 @@
+import { InferenceTypes } from '@mochilabs/ra-core';
+import { FieldProps, SelectInput } from '@mochilabs/ra-ui-materialui';
 import * as React from 'react';
-import { InferenceTypes } from 'ra-core';
-import { FieldProps, SelectInput } from 'ra-ui-materialui';
 
 export const FieldTypeInput = (props: FieldProps) => (
     <SelectInput choices={INFERENCE_TYPES} {...props} />

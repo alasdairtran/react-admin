@@ -1,24 +1,18 @@
-import debounce from 'lodash/debounce';
-import React, {
-    useRef,
-    useEffect,
-    useCallback,
-    FunctionComponent,
-    ComponentProps,
-} from 'react';
-import Quill, { QuillOptionsStatic } from 'quill';
-import { useInput, FieldTitle } from 'ra-core';
-import { InputHelperText } from 'ra-ui-materialui';
 import {
-    FormHelperText,
-    FormControl,
-    InputLabel,
-    PropTypes as MuiPropTypes,
+    FormControl, FormHelperText, InputLabel,
+    PropTypes as MuiPropTypes
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import { FieldTitle, useInput } from '@mochilabs/ra-core';
+import { InputHelperText } from '@mochilabs/ra-ui-materialui';
+import debounce from 'lodash/debounce';
 import PropTypes from 'prop-types';
-
+import Quill, { QuillOptionsStatic } from 'quill';
+import React, {
+    ComponentProps, FunctionComponent, useCallback, useEffect, useRef
+} from 'react';
 import styles from './styles';
+
 
 const useStyles = makeStyles(styles, { name: 'RaRichTextInput' });
 

@@ -1,8 +1,8 @@
-import * as React from 'react';
-import { useField } from 'react-final-form';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Radio from '@material-ui/core/Radio';
-import { useChoices } from 'ra-core';
+import { useChoices } from '@mochilabs/ra-core';
+import * as React from 'react';
+import { useField } from 'react-final-form';
 
 const RadioButtonGroupInputItem = ({
     choice,

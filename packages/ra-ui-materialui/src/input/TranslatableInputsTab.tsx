@@ -1,9 +1,9 @@
-import React from 'react';
-import Tab, { TabProps } from '@material-ui/core/Tab';
-import { useFormGroup, useTranslate } from 'ra-core';
 import { makeStyles } from '@material-ui/core/styles';
-import { ClassesOverride } from '../types';
+import Tab, { TabProps } from '@material-ui/core/Tab';
+import { useFormGroup, useTranslate } from '@mochilabs/ra-core';
 import { capitalize } from 'inflection';
+import React from 'react';
+import { ClassesOverride } from '../types';
 
 /**
  * Single tab that selects a locale in a TranslatableInputs component.

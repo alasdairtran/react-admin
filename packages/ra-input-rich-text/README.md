@@ -20,7 +20,7 @@ import {
     EditButton,
     TextInput,
 } from 'react-admin';
-import RichTextInput from 'ra-input-rich-text';
+import RichTextInput from '@mochilabs/ra-input-rich-text';
 
 const PostTitle = ({ record }) => {
     return <span>Post {record ? `"${record.title}"` : ''}</span>;
@@ -55,7 +55,7 @@ const configureQuill = quill => quill.getModule('toolbar').addHandler('bold', fu
 <RichTextInput source="text" configureQuill={configureQuill}/>
 ```
 
-**Tip**: When used inside a material-ui `<Card>` (e.g in the default `<Edit>` view), `<RichTextInput>` displays link tooltip as cut off when the user wants to add a hyperlink to a word located on the left side of the input. This is due to an incompatibility between material-ui's `<Card>` component and Quill's positioning algorithm for the link tooltip. 
+**Tip**: When used inside a material-ui `<Card>` (e.g in the default `<Edit>` view), `<RichTextInput>` displays link tooltip as cut off when the user wants to add a hyperlink to a word located on the left side of the input. This is due to an incompatibility between material-ui's `<Card>` component and Quill's positioning algorithm for the link tooltip.
 
 To fix this problem, you should override the default card style, as follows:
 

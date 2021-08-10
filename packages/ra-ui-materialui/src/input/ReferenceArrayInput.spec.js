@@ -1,11 +1,11 @@
-import * as React from 'react';
+import { useListContext } from '@mochilabs/ra-core';
+import { renderWithRedux } from '@mochilabs/ra-test';
 import { render } from '@testing-library/react';
-import ReferenceArrayInput, {
-    ReferenceArrayInputView,
-} from './ReferenceArrayInput';
+import * as React from 'react';
 import { Form } from 'react-final-form';
-import { useListContext } from 'ra-core';
-import { renderWithRedux } from 'ra-test';
+import ReferenceArrayInput, {
+    ReferenceArrayInputView
+} from './ReferenceArrayInput';
 
 describe('<ReferenceArrayInput />', () => {
     const defaultProps = {

@@ -1,4 +1,4 @@
-import { GET_LIST, GET_MANY, GET_MANY_REFERENCE } from 'ra-core';
+import { GET_LIST, GET_MANY, GET_MANY_REFERENCE } from '@mochilabs/ra-core';
 
 const sanitizeResource = data => {
     const result = Object.keys(data).reduce((acc, key) => {

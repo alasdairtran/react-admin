@@ -1,8 +1,8 @@
-import * as React from 'react';
-import { FC, cloneElement, ReactElement } from 'react';
-import { createPortal } from 'react-dom';
+import { Record, useTranslate, warning } from '@mochilabs/ra-core';
 import PropTypes from 'prop-types';
-import { useTranslate, Record, warning } from 'ra-core';
+import * as React from 'react';
+import { cloneElement, FC, ReactElement } from 'react';
+import { createPortal } from 'react-dom';
 
 export interface TitleProps {
     className?: string;

@@ -1,20 +1,17 @@
-import * as React from 'react';
-import { render, waitFor, fireEvent } from '@testing-library/react';
-import expect from 'expect';
-import {
-    DataProviderContext,
-    DataProvider,
-    SaveContextProvider,
-    FormContextProvider,
-} from 'ra-core';
-import { renderWithRedux, TestContext } from 'ra-test';
 import { ThemeProvider } from '@material-ui/core';
 import { createMuiTheme } from '@material-ui/core/styles';
-
-import SaveButton from './SaveButton';
-import { Toolbar, SimpleForm } from '../form';
+import {
+    DataProvider, DataProviderContext, FormContextProvider, SaveContextProvider
+} from '@mochilabs/ra-core';
+import { renderWithRedux, TestContext } from '@mochilabs/ra-test';
+import { fireEvent, render, waitFor } from '@testing-library/react';
+import expect from 'expect';
+import * as React from 'react';
 import { Edit } from '../detail';
+import { SimpleForm, Toolbar } from '../form';
 import { TextInput } from '../input';
+import SaveButton from './SaveButton';
+
 
 const theme = createMuiTheme();
 

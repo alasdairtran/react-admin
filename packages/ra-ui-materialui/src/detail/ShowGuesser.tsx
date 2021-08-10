@@ -1,17 +1,14 @@
+import {
+    getElementsFromRecords, InferredElement, ShowContextProvider,
+    useResourceContext,
+    useShowContext, useShowController
+} from '@mochilabs/ra-core';
+import inflection from 'inflection';
 import * as React from 'react';
 import { useEffect, useState } from 'react';
-import inflection from 'inflection';
-import {
-    useShowController,
-    InferredElement,
-    getElementsFromRecords,
-    ShowContextProvider,
-    useResourceContext,
-    useShowContext,
-} from 'ra-core';
-
-import { ShowView } from './ShowView';
 import showFieldTypes from './showFieldTypes';
+import { ShowView } from './ShowView';
+
 
 const ShowViewGuesser = props => {
     const resource = useResourceContext(props);

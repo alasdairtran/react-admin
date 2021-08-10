@@ -1,13 +1,13 @@
-import * as React from 'react';
-import { ReactElement, ReactNode } from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 import {
     TranslatableContextProvider,
     useTranslatable,
-    UseTranslatableOptions,
-} from 'ra-core';
-import { TranslatableInputsTabs } from './TranslatableInputsTabs';
+    UseTranslatableOptions
+} from '@mochilabs/ra-core';
+import * as React from 'react';
+import { ReactElement, ReactNode } from 'react';
 import { TranslatableInputsTabContent } from './TranslatableInputsTabContent';
-import { makeStyles } from '@material-ui/core/styles';
+import { TranslatableInputsTabs } from './TranslatableInputsTabs';
 
 /**
  * Provides a way to edit multiple languages for any input passed as children.

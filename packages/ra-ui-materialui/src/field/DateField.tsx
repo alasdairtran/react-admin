@@ -1,12 +1,12 @@
+import Typography, { TypographyProps } from '@material-ui/core/Typography';
+import { useRecordContext } from '@mochilabs/ra-core';
+import get from 'lodash/get';
+import PropTypes from 'prop-types';
 import * as React from 'react';
 import { FC, memo } from 'react';
-import PropTypes from 'prop-types';
-import get from 'lodash/get';
-import Typography, { TypographyProps } from '@material-ui/core/Typography';
-import { useRecordContext } from 'ra-core';
-
 import sanitizeFieldRestProps from './sanitizeFieldRestProps';
-import { PublicFieldProps, InjectedFieldProps, fieldPropTypes } from './types';
+import { fieldPropTypes, InjectedFieldProps, PublicFieldProps } from './types';
+
 
 const toLocaleStringSupportsLocales = (() => {
     // from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString

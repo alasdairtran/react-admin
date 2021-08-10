@@ -4,10 +4,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import AddIcon from '@material-ui/icons/AddCircleOutline';
 import CloseIcon from '@material-ui/icons/RemoveCircleOutline';
+import { Record, useTranslate, ValidationError } from '@mochilabs/ra-core';
 import classNames from 'classnames';
 import get from 'lodash/get';
 import PropTypes from 'prop-types';
-import { Record, useTranslate, ValidationError } from 'ra-core';
 import * as React from 'react';
 import {
     Children,
@@ -15,7 +15,7 @@ import {
     FC,
     isValidElement,
     ReactElement,
-    useRef,
+    useRef
 } from 'react';
 import { FieldArrayRenderProps } from 'react-final-form-arrays';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';

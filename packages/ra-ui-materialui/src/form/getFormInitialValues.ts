@@ -1,4 +1,4 @@
-import { Record } from 'ra-core';
+import { Record } from '@mochilabs/ra-core';
 
 export default function getFormInitialValues(
     initialValues: any,

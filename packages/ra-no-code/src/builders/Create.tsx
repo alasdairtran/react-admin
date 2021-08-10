@@ -1,16 +1,16 @@
-import React from 'react';
-import { useResourceContext } from 'ra-core';
+import { useResourceContext } from '@mochilabs/ra-core';
 import {
     Create as RaCreate,
     CreateProps,
     SimpleForm,
-    SimpleFormProps,
-} from 'ra-ui-materialui';
-import { getInputFromFieldDefinition } from './getInputFromFieldDefinition';
+    SimpleFormProps
+} from '@mochilabs/ra-ui-materialui';
+import React from 'react';
 import {
     useResourceConfiguration,
-    useResourcesConfiguration,
+    useResourcesConfiguration
 } from '../ResourceConfiguration';
+import { getInputFromFieldDefinition } from './getInputFromFieldDefinition';
 
 export const Create = (props: CreateProps) => (
     <RaCreate {...props}>

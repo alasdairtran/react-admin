@@ -1,8 +1,8 @@
-import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Button from './Button';
-import { useTranslate } from 'ra-core';
+import { useTranslate } from '@mochilabs/ra-core';
 import classnames from 'classnames';
+import React from 'react';
+import Button from './Button';
 
 const skipToContent = () => {
     if (typeof document === 'undefined') return;

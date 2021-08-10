@@ -1,9 +1,9 @@
-import * as React from 'react';
+import { ListContextProvider } from '@mochilabs/ra-core';
+import { cleanup, render } from '@testing-library/react';
 import expect from 'expect';
-import { render, cleanup } from '@testing-library/react';
-
-import { ListContextProvider } from 'ra-core';
+import * as React from 'react';
 import FilterListItem from './FilterListItem';
+
 
 describe('<FilterListItem/>', () => {
     afterEach(cleanup);

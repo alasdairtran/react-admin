@@ -1,8 +1,8 @@
-import * as React from 'react';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
 import { makeStyles } from '@material-ui/core/styles';
-import { useChoices } from 'ra-core';
+import { useChoices } from '@mochilabs/ra-core';
+import * as React from 'react';
 
 const useStyles = makeStyles(
     {

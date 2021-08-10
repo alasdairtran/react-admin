@@ -1,22 +1,17 @@
-import * as React from 'react';
-import { useCallback, useMemo, FC, ReactElement } from 'react';
-import PropTypes from 'prop-types';
 import {
     TablePagination,
-    TablePaginationBaseProps,
-    Toolbar,
-    useMediaQuery,
-    Theme,
+    TablePaginationBaseProps, Theme, Toolbar,
+    useMediaQuery
 } from '@material-ui/core';
 import {
-    useTranslate,
-    useListPaginationContext,
-    sanitizeListRestProps,
-    ComponentPropType,
-} from 'ra-core';
-
+    ComponentPropType, sanitizeListRestProps, useListPaginationContext, useTranslate
+} from '@mochilabs/ra-core';
+import PropTypes from 'prop-types';
+import * as React from 'react';
+import { FC, ReactElement, useCallback, useMemo } from 'react';
 import DefaultPaginationActions from './PaginationActions';
 import DefaultPaginationLimit from './PaginationLimit';
+
 
 const emptyArray = [];
 

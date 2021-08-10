@@ -1,29 +1,24 @@
-import * as React from 'react';
-import { FC, ReactNode, ReactElement } from 'react';
-import PropTypes from 'prop-types';
 import {
     Avatar,
-    List,
-    ListProps,
-    ListItem,
+    List, ListItem,
     ListItemAvatar,
     ListItemIcon,
     ListItemSecondaryAction,
-    ListItemText,
+    ListItemText, ListProps
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import { Link } from 'react-router-dom';
 import {
-    linkToRecord,
-    sanitizeListRestProps,
-    useListContext,
-    Record,
-    RecordMap,
-    Identifier,
-} from 'ra-core';
-
-import SimpleListLoading from './SimpleListLoading';
+    Identifier, linkToRecord, Record,
+    RecordMap, sanitizeListRestProps,
+    useListContext
+} from '@mochilabs/ra-core';
+import PropTypes from 'prop-types';
+import * as React from 'react';
+import { FC, ReactElement, ReactNode } from 'react';
+import { Link } from 'react-router-dom';
 import { ClassesOverride } from '../types';
+import SimpleListLoading from './SimpleListLoading';
+
 
 const useStyles = makeStyles(
     {

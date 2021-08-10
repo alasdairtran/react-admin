@@ -1,12 +1,11 @@
-import { useState } from 'react';
-import { parse } from 'papaparse';
-import { getValuesFromRecords, Record, useDataProvider } from 'ra-core';
+import { getValuesFromRecords, Record, useDataProvider } from '@mochilabs/ra-core';
 import set from 'lodash/set';
-
+import { parse } from 'papaparse';
+import { useState } from 'react';
 import {
-    useResourcesConfiguration,
-    getFieldDefinitionsFromRecords,
+    getFieldDefinitionsFromRecords, useResourcesConfiguration
 } from '../ResourceConfiguration';
+
 
 /**
  * This hooks returns a tuple with its first element being a boolean indicating whether an import is ongoing, and the second element a function to call with a resource name and a file to import.

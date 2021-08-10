@@ -22,7 +22,7 @@ Pass a JSON object to the provider constructor:
 // in src/App.js
 import * as React from "react";
 import { Admin, Resource } from 'react-admin';
-import fakeDataProvider from 'ra-data-fakerest';
+import fakeDataProvider from '@mochilabs/ra-data-fakerest';
 
 const dataProvider = fakeDataProvider({
     posts: [
@@ -69,7 +69,7 @@ Here is an example input:
 }
 ```
 
-You can find a more sophisticated example in [the Posters Galore demo](https://raw.githubusercontent.com/marmelab/ng-admin-demo/master/js/data.js). 
+You can find a more sophisticated example in [the Posters Galore demo](https://raw.githubusercontent.com/marmelab/ng-admin-demo/master/js/data.js).
 
 ## Logging
 
@@ -79,7 +79,7 @@ Pass `true` as second argument to log the requests made to the provider in the c
 // in src/App.js
 import * as React from "react";
 import { Admin, Resource } from 'react-admin';
-import fakeDataProvider from 'ra-data-fakerest';
+import fakeDataProvider from '@mochilabs/ra-data-fakerest';
 
 const dataProvider = fakeDataProvider({ /* data here */ }, true);
 

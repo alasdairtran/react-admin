@@ -1,9 +1,9 @@
 import { ThemeProvider } from '@material-ui/core';
 import { createMuiTheme } from '@material-ui/core/styles';
+import { SaveContextProvider, SideEffectContextProvider } from '@mochilabs/ra-core';
+import { renderWithRedux } from '@mochilabs/ra-test';
 import { fireEvent, getByText, waitFor } from '@testing-library/react';
 import expect from 'expect';
-import { SaveContextProvider, SideEffectContextProvider } from 'ra-core';
-import { renderWithRedux } from 'ra-test';
 import * as React from 'react';
 import { ArrayInput } from '../input';
 import TextInput from '../input/TextInput';

@@ -1,3 +1,4 @@
+import { Identifier, useTranslate } from '@mochilabs/ra-core';
 import * as React from 'react';
 import {
     ChangeEvent,
@@ -5,9 +6,8 @@ import {
     isValidElement,
     ReactElement,
     useContext,
-    useState,
+    useState
 } from 'react';
-import { Identifier, useTranslate } from 'ra-core';
 
 /**
  * This hook provides support for suggestion creation in inputs which have choices.

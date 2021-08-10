@@ -1,13 +1,13 @@
-import expect from 'expect';
 import { ThemeProvider } from '@material-ui/core';
 import { createMuiTheme } from '@material-ui/core/styles';
+import { TestContext } from '@mochilabs/ra-test';
 import { render } from '@testing-library/react';
-import * as React from 'react';
+import expect from 'expect';
 import { createMemoryHistory } from 'history';
+import * as React from 'react';
 import { Router } from 'react-router-dom';
-
 import { CloneButton } from './CloneButton';
-import { TestContext } from 'ra-test';
+
 
 const theme = createMuiTheme();
 

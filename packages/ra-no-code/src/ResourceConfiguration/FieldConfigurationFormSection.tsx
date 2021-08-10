@@ -1,10 +1,10 @@
-import * as React from 'react';
-import { getFieldLabelTranslationArgs, useTranslate } from 'ra-core';
-import { TextInput } from 'ra-ui-materialui';
 import { CardContent } from '@material-ui/core';
+import { getFieldLabelTranslationArgs, useTranslate } from '@mochilabs/ra-core';
+import { TextInput } from '@mochilabs/ra-ui-materialui';
+import * as React from 'react';
+import { ConfigurationInputsFromFieldDefinition } from './ConfigurationInputsFromFieldDefinition';
 import { FieldTypeInput } from './FieldConfiguration/FieldTypeInput';
 import { FieldViewsInput } from './FieldConfiguration/FieldViewsInput';
-import { ConfigurationInputsFromFieldDefinition } from './ConfigurationInputsFromFieldDefinition';
 
 export const FieldConfigurationFormSection = props => {
     const { sourcePrefix, field, resource } = props;

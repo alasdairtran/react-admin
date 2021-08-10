@@ -1,18 +1,18 @@
+import { InferredElement, InferredTypeMap, InputProps } from '@mochilabs/ra-core';
 import * as React from 'react';
-import { ReactNode, ReactElement } from 'react';
+import { ReactElement, ReactNode } from 'react';
 import SimpleForm from '../form/SimpleForm';
 import SimpleFormIterator from '../form/SimpleFormIterator';
 import ArrayInput from '../input/ArrayInput';
 import BooleanInput from '../input/BooleanInput';
 import DateInput from '../input/DateInput';
 import NumberInput from '../input/NumberInput';
-import ReferenceInput from '../input/ReferenceInput';
 import ReferenceArrayInput, {
-    ReferenceArrayInputProps,
+    ReferenceArrayInputProps
 } from '../input/ReferenceArrayInput';
+import ReferenceInput from '../input/ReferenceInput';
 import { SelectInput } from '../input/SelectInput';
 import TextInput from '../input/TextInput';
-import { InferredElement, InferredTypeMap, InputProps } from 'ra-core';
 
 const editFieldTypes: InferredTypeMap = {
     form: {

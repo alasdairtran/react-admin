@@ -1,17 +1,17 @@
-import React from 'react';
-import { email, InferredElementDescription } from 'ra-core';
+import { email, InferredElementDescription } from '@mochilabs/ra-core';
 import {
     BooleanInput,
     DateInput,
     ImageInput,
     NumberInput,
     ReferenceInput,
-    TextInput,
-} from 'ra-ui-materialui';
+    TextInput
+} from '@mochilabs/ra-ui-materialui';
+import React from 'react';
 import {
     FieldConfiguration,
     ReferenceFieldConfiguration,
-    ResourceConfigurationMap,
+    ResourceConfigurationMap
 } from '../ResourceConfiguration';
 import { ReferenceInputChildFromDefinition } from './ReferenceInputChildFromDefinition';
 

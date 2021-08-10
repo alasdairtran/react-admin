@@ -1,11 +1,10 @@
+import { DataProvider } from '@mochilabs/ra-core';
 import * as React from 'react';
 import { ReactNode, useCallback, useMemo, useState } from 'react';
-import { DataProvider } from 'ra-core';
 import {
-    ResourceConfigurationMap,
     ResourceConfiguration,
     ResourceConfigurationContext,
-    ResourceConfigurationContextValue,
+    ResourceConfigurationContextValue, ResourceConfigurationMap
 } from './ResourceConfigurationContext';
 
 export const ResourceConfigurationProvider = ({

@@ -1,8 +1,8 @@
-import * as React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import { InputProps } from '@mochilabs/ra-core';
+import * as React from 'react';
+import FileInput, { FileInputOptions, FileInputProps } from './FileInput';
 
-import FileInput, { FileInputProps, FileInputOptions } from './FileInput';
-import { InputProps } from 'ra-core';
 
 const useStyles = makeStyles(
     theme => ({

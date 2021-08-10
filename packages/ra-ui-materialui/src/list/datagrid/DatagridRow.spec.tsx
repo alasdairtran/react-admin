@@ -1,12 +1,12 @@
-import * as React from 'react';
+import { linkToRecord } from '@mochilabs/ra-core';
+import { renderWithRedux } from '@mochilabs/ra-test';
 import { fireEvent } from '@testing-library/react';
-import { linkToRecord } from 'ra-core';
-import { renderWithRedux } from 'ra-test';
 import { createMemoryHistory } from 'history';
+import * as React from 'react';
 import { Router } from 'react-router-dom';
-
-import DatagridRow from './DatagridRow';
 import DatagridContextProvider from './DatagridContextProvider';
+import DatagridRow from './DatagridRow';
+
 
 const TitleField = ({ record }: any): JSX.Element => (
     <span>{record.title}</span>

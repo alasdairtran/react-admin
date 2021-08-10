@@ -1,16 +1,14 @@
+import {
+    getMutationMode, MutationMode, Record,
+    RedirectionSideEffect
+} from '@mochilabs/ra-core';
+import PropTypes from 'prop-types';
 import * as React from 'react';
 import { ReactElement, SyntheticEvent } from 'react';
-import PropTypes from 'prop-types';
-import {
-    Record,
-    RedirectionSideEffect,
-    MutationMode,
-    getMutationMode,
-} from 'ra-core';
-
 import { ButtonProps } from './Button';
-import { DeleteWithUndoButton } from './DeleteWithUndoButton';
 import { DeleteWithConfirmButton } from './DeleteWithConfirmButton';
+import { DeleteWithUndoButton } from './DeleteWithUndoButton';
+
 
 /**
  * Button used to delete a single record. Added by default by the <Toolbar> of edit and show views.

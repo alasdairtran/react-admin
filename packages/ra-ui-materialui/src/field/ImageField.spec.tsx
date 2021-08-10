@@ -1,9 +1,9 @@
-import * as React from 'react';
-import expect from 'expect';
+import { RecordContextProvider } from '@mochilabs/ra-core';
 import { render } from '@testing-library/react';
-import { RecordContextProvider } from 'ra-core';
-
+import expect from 'expect';
+import * as React from 'react';
 import ImageField from './ImageField';
+
 
 const defaultProps = {
     classes: {},

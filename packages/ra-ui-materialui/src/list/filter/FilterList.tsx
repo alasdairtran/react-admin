@@ -1,7 +1,7 @@
+import { Box, List, Typography } from '@material-ui/core';
+import { useTranslate } from '@mochilabs/ra-core';
 import * as React from 'react';
 import { FC } from 'react';
-import { Box, Typography, List } from '@material-ui/core';
-import { useTranslate } from 'ra-core';
 
 /**
  * Header and container for a list of filter list items

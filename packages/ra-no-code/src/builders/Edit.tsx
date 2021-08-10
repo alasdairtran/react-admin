@@ -1,14 +1,14 @@
-import React from 'react';
-import { useResourceContext } from 'ra-core';
+import { useResourceContext } from '@mochilabs/ra-core';
 import {
     Edit as RaEdit,
     EditProps,
     SimpleForm,
-    SimpleFormProps,
-} from 'ra-ui-materialui';
+    SimpleFormProps
+} from '@mochilabs/ra-ui-materialui';
+import React from 'react';
 import {
     useResourceConfiguration,
-    useResourcesConfiguration,
+    useResourcesConfiguration
 } from '../ResourceConfiguration';
 import { getInputFromFieldDefinition } from './getInputFromFieldDefinition';
 

@@ -1,22 +1,22 @@
-import * as React from 'react';
-import { useCallback, FunctionComponent } from 'react';
-import PropTypes from 'prop-types';
-import get from 'lodash/get';
-import FormLabel from '@material-ui/core/FormLabel';
+import { CheckboxProps } from '@material-ui/core/Checkbox';
 import FormControl, { FormControlProps } from '@material-ui/core/FormControl';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormHelperText from '@material-ui/core/FormHelperText';
+import FormLabel from '@material-ui/core/FormLabel';
 import { makeStyles } from '@material-ui/core/styles';
-import { CheckboxProps } from '@material-ui/core/Checkbox';
-import { FieldTitle, useInput, ChoicesInputProps, warning } from 'ra-core';
-
-import sanitizeInputRestProps from './sanitizeInputRestProps';
-import CheckboxGroupInputItem from './CheckboxGroupInputItem';
-import InputHelperText from './InputHelperText';
+import { ChoicesInputProps, FieldTitle, useInput, warning } from '@mochilabs/ra-core';
 import classnames from 'classnames';
-import Labeled from './Labeled';
+import get from 'lodash/get';
+import PropTypes from 'prop-types';
+import * as React from 'react';
+import { FunctionComponent, useCallback } from 'react';
 import { LinearProgress } from '../layout';
 import { ClassesOverride } from '../types';
+import CheckboxGroupInputItem from './CheckboxGroupInputItem';
+import InputHelperText from './InputHelperText';
+import Labeled from './Labeled';
+import sanitizeInputRestProps from './sanitizeInputRestProps';
+
 
 /**
  * An Input component for a checkbox group, using an array of objects for the options

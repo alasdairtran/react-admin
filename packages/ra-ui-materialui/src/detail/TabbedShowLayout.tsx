@@ -1,3 +1,7 @@
+import Divider from '@material-ui/core/Divider';
+import { makeStyles } from '@material-ui/core/styles';
+import { escapePath, Record } from '@mochilabs/ra-core';
+import PropTypes from 'prop-types';
 import * as React from 'react';
 import {
     ChangeEvent,
@@ -6,17 +10,12 @@ import {
     isValidElement,
     ReactElement,
     ReactNode,
-    useState,
+    useState
 } from 'react';
-import PropTypes from 'prop-types';
-import Divider from '@material-ui/core/Divider';
-import { Route } from 'react-router-dom';
-import { makeStyles } from '@material-ui/core/styles';
-import { useRouteMatch } from 'react-router-dom';
-import { escapePath, Record } from 'ra-core';
-
-import { TabbedShowLayoutTabs, getTabFullPath } from './TabbedShowLayoutTabs';
+import { Route, useRouteMatch } from 'react-router-dom';
 import { ClassesOverride } from '../types';
+import { getTabFullPath, TabbedShowLayoutTabs } from './TabbedShowLayoutTabs';
+
 
 const sanitizeRestProps = ({
     children,

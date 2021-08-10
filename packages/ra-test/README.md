@@ -20,7 +20,7 @@ Luckily, the `ra-test` package provides access to a `TestContext` wrapper compon
 
 ```jsx
 import * as React from "react";
-import { TestContext } from 'ra-test';
+import { TestContext } from '@mochilabs/ra-test';
 import { render } from '@testing-library/react';
 import MyCustomEditView from './my-custom-edit-view';
 
@@ -77,7 +77,7 @@ testUtils = render(
 );
 ```
 
-Note you should also enable the default react-admin reducers in order to supply the custom ones. 
+Note you should also enable the default react-admin reducers in order to supply the custom ones.
 
 ### Spying on the store 'dispatch'
 
@@ -107,11 +107,11 @@ Instead of wrapping the component under test with the `TestContext` by yourself 
 It will return the same output as the `render` method from `@testing-library/react` but will add the `dispatch` and `reduxStore` helpers.
 
 ```jsx
-import { defaultStore } from 'ra-test';
+import { defaultStore } from '@mochilabs/ra-test';
 //...
 const { dispatch, reduxStore, ...testUtils } = renderWithRedux(
-    <MyCustomEditView />, 
-    initialState, 
+    <MyCustomEditView />,
+    initialState,
     options,
     myCustomReducers
 );

@@ -1,21 +1,18 @@
+import { makeStyles } from '@material-ui/core/styles';
+import {
+    Record, TranslatableContextProvider, useRecordContext, useTranslatable,
+    UseTranslatableOptions
+} from '@mochilabs/ra-core';
 import * as React from 'react';
 import { ReactElement, ReactNode } from 'react';
-import {
-    TranslatableContextProvider,
-    useTranslatable,
-    UseTranslatableOptions,
-    Record,
-    useRecordContext,
-} from 'ra-core';
-import { TranslatableFieldsTabs } from './TranslatableFieldsTabs';
-import { TranslatableFieldsTabContent } from './TranslatableFieldsTabContent';
-import { makeStyles } from '@material-ui/core/styles';
 import { ClassesOverride } from '../types';
+import { TranslatableFieldsTabContent } from './TranslatableFieldsTabContent';
+import { TranslatableFieldsTabs } from './TranslatableFieldsTabs';
 
 /**
  * Provides a way to show multiple languages for any field passed as children.
  * It expects the translatable values to have the following structure:
- * { 
+ * {
  *     name: {
  *         en: 'The english value',
  *         fr: 'The french value',

@@ -13,8 +13,8 @@ npm install --save ra-language-french
 ## Usage
 
 ```js
-import frenchMessages from 'ra-language-french';
-import polyglotI18nProvider from 'ra-i18n-polyglot';
+import frenchMessages from '@mochilabs/ra-language-french';
+import polyglotI18nProvider from '@mochilabs/ra-i18n-polyglot';
 
 const messages = {
     'fr': frenchMessages,

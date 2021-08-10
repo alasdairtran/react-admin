@@ -1,5 +1,3 @@
-import * as React from 'react';
-import { useState } from 'react';
 import {
     Avatar,
     Card,
@@ -8,25 +6,27 @@ import {
     ListItem,
     ListItemAvatar,
     ListItemText,
-    Typography,
+    Typography
 } from '@material-ui/core';
 import {
     createMuiTheme,
     makeStyles,
     ThemeProvider,
-    unstable_createMuiStrictModeTheme,
+    unstable_createMuiStrictModeTheme
 } from '@material-ui/core/styles';
+import FolderIcon from '@material-ui/icons/Folder';
 import {
     defaultTheme as RaDefaultTheme,
-    RaThemeOptions,
-} from 'ra-ui-materialui';
-import FolderIcon from '@material-ui/icons/Folder';
-import { Application } from './types';
-import { NewApplicationForm } from './NewApplicationForm';
+    RaThemeOptions
+} from '@mochilabs/ra-ui-materialui';
+import * as React from 'react';
+import { useState } from 'react';
 import {
     loadApplicationsFromStorage,
-    storeApplicationsInStorage,
+    storeApplicationsInStorage
 } from './applicationStorage';
+import { NewApplicationForm } from './NewApplicationForm';
+import { Application } from './types';
 
 const defaultTheme =
     process.env.NODE_ENV !== 'production'

@@ -1,26 +1,22 @@
-import React, {
-    HtmlHTMLAttributes,
-    ComponentType,
-    createElement,
-    ReactNode,
-    useRef,
-    useEffect,
-    useMemo,
-} from 'react';
-import PropTypes from 'prop-types';
-import classnames from 'classnames';
-import { Card, Avatar, Theme } from '@material-ui/core';
+import { Avatar, Card, Theme } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import { ThemeProvider } from '@material-ui/styles';
 import LockIcon from '@material-ui/icons/Lock';
+import { ThemeProvider } from '@material-ui/styles';
+import { TitleComponent, useCheckAuth } from '@mochilabs/ra-core';
+import classnames from 'classnames';
+import PropTypes from 'prop-types';
+import React, {
+    ComponentType,
+    createElement, HtmlHTMLAttributes, ReactNode, useEffect,
+    useMemo, useRef
+} from 'react';
 import { StaticContext } from 'react-router';
 import { useHistory } from 'react-router-dom';
-import { useCheckAuth, TitleComponent } from 'ra-core';
-
 import defaultTheme from '../defaultTheme';
 import { createMuiTheme } from '../layout';
 import DefaultNotification from '../layout/Notification';
 import DefaultLoginForm from './LoginForm';
+
 
 export interface LoginProps
     extends Omit<HtmlHTMLAttributes<HTMLDivElement>, 'title'> {

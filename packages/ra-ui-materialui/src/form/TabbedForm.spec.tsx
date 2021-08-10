@@ -1,18 +1,18 @@
-import * as React from 'react';
-import { MemoryRouter, Router } from 'react-router-dom';
-import { createMemoryHistory } from 'history';
 import {
     minLength,
     required,
     SaveContextProvider,
-    SideEffectContextProvider,
-} from 'ra-core';
-import { renderWithRedux } from 'ra-test';
-
-import { TabbedForm } from './TabbedForm';
-import { FormTab } from './FormTab';
-import TextInput from '../input/TextInput';
+    SideEffectContextProvider
+} from '@mochilabs/ra-core';
+import { renderWithRedux } from '@mochilabs/ra-test';
 import { fireEvent, isInaccessible } from '@testing-library/react';
+import { createMemoryHistory } from 'history';
+import * as React from 'react';
+import { MemoryRouter, Router } from 'react-router-dom';
+import TextInput from '../input/TextInput';
+import { FormTab } from './FormTab';
+import { TabbedForm } from './TabbedForm';
+
 
 describe('<TabbedForm />', () => {
     const saveContextValue = {

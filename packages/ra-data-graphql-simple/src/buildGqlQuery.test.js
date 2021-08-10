@@ -1,18 +1,14 @@
-import { TypeKind, print } from 'graphql';
 import {
-    GET_LIST,
-    GET_ONE,
-    GET_MANY,
-    GET_MANY_REFERENCE,
-    UPDATE,
     CREATE,
-    DELETE,
-} from 'ra-core';
+    DELETE, GET_LIST, GET_MANY,
+    GET_MANY_REFERENCE, GET_ONE, UPDATE
+} from '@mochilabs/ra-core';
+import { print, TypeKind } from 'graphql';
 import buildGqlQuery, {
     buildApolloArgs,
     buildArgs,
     buildFields,
-    getArgType,
+    getArgType
 } from './buildGqlQuery';
 
 describe('getArgType', () => {

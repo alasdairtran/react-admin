@@ -1,11 +1,10 @@
+import { required, TestTranslationProvider } from '@mochilabs/ra-core';
+import { fireEvent, render, waitFor } from '@testing-library/react';
 import * as React from 'react';
-import { render, fireEvent, waitFor } from '@testing-library/react';
 import { Form } from 'react-final-form';
-import { TestTranslationProvider } from 'ra-core';
-
 import { SelectInput } from './SelectInput';
-import { required } from 'ra-core';
 import { useCreateSuggestionContext } from './useSupportCreateSuggestion';
+
 
 describe('<SelectInput />', () => {
     const defaultProps = {

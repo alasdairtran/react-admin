@@ -1,10 +1,10 @@
-import * as React from 'react';
+import { TestTranslationProvider } from '@mochilabs/ra-core';
+import { fireEvent, render } from '@testing-library/react';
 import expect from 'expect';
-import { render, fireEvent } from '@testing-library/react';
+import * as React from 'react';
 import { Form } from 'react-final-form';
-import { TestTranslationProvider } from 'ra-core';
-
 import RadioButtonGroupInput from './RadioButtonGroupInput';
+
 
 describe('<RadioButtonGroupInput />', () => {
     const defaultProps = {

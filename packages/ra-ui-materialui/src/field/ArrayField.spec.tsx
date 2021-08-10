@@ -1,11 +1,11 @@
-import * as React from 'react';
+import { TestContext } from '@mochilabs/ra-test';
 import { render } from '@testing-library/react';
-import { TestContext } from 'ra-test';
-
+import * as React from 'react';
+import Datagrid from '../list/datagrid/Datagrid';
 import ArrayField from './ArrayField';
 import NumberField from './NumberField';
 import TextField from './TextField';
-import Datagrid from '../list/datagrid/Datagrid';
+
 
 describe('<ArrayField />', () => {
     const currentSort = { field: 'id', order: 'ASC' };

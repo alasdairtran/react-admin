@@ -1,11 +1,11 @@
-import * as React from 'react';
+import { ListContext } from '@mochilabs/ra-core';
 import { render } from '@testing-library/react';
 import { createMemoryHistory } from 'history';
+import * as React from 'react';
 import { Router } from 'react-router-dom';
-import { ListContext } from 'ra-core';
-
-import SingleFieldList from './SingleFieldList';
 import ChipField from '../field/ChipField';
+import SingleFieldList from './SingleFieldList';
+
 
 const renderWithRouter = children => {
     const history = createMemoryHistory();

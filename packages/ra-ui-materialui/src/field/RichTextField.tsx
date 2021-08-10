@@ -1,12 +1,12 @@
+import Typography, { TypographyProps } from '@material-ui/core/Typography';
+import { useRecordContext } from '@mochilabs/ra-core';
+import get from 'lodash/get';
+import PropTypes from 'prop-types';
 import * as React from 'react';
 import { FC, memo } from 'react';
-import PropTypes from 'prop-types';
-import get from 'lodash/get';
-import Typography, { TypographyProps } from '@material-ui/core/Typography';
-import { useRecordContext } from 'ra-core';
-
 import sanitizeFieldRestProps from './sanitizeFieldRestProps';
-import { InjectedFieldProps, PublicFieldProps, fieldPropTypes } from './types';
+import { fieldPropTypes, InjectedFieldProps, PublicFieldProps } from './types';
+
 
 export const removeTags = (input: string) =>
     input ? input.replace(/<[^>]+>/gm, '') : '';

@@ -17,9 +17,9 @@ Wrap the function exported by this package around a function returning translati
 ```jsx
 import * as React from "react";
 import { Admin, Resource } from 'react-admin';
-import polyglotI18nProvider from 'ra-i18n-polyglot';
-import englishMessages from 'ra-language-english';
-import frenchMessages from 'ra-language-french';
+import polyglotI18nProvider from '@mochilabs/ra-i18n-polyglot';
+import englishMessages from '@mochilabs/ra-language-english';
+import frenchMessages from '@mochilabs/ra-language-french';
 
 const messages = {
     fr: frenchMessages,
@@ -66,11 +66,11 @@ The default messages are available [here](https://github.com/marmelab/react-admi
 
 The function passed as parameter of `polyglotI18nProvider` can return a *Promise* for messages instead of a messages object. This lets you lazy load messages upon language change.
 
-Note that the messages for the default locale (used by react-admin for the initial render) must be returned in a synchronous way. 
+Note that the messages for the default locale (used by react-admin for the initial render) must be returned in a synchronous way.
 
 ```jsx
-import polyglotI18nProvider from 'ra-i18n-polyglot';
-import englishMessages from 'ra-language-english';
+import polyglotI18nProvider from '@mochilabs/ra-i18n-polyglot';
+import englishMessages from '@mochilabs/ra-language-english';
 
 const asyncMessages = {
     fr: () => import('ra-language-french').then(messages => messages.default),

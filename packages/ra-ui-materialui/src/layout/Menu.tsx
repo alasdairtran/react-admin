@@ -1,16 +1,16 @@
-import * as React from 'react';
-import { ReactNode } from 'react';
-import PropTypes from 'prop-types';
-import { shallowEqual, useSelector } from 'react-redux';
-import lodashGet from 'lodash/get';
 // @ts-ignore
 import { makeStyles } from '@material-ui/core/styles';
 import DefaultIcon from '@material-ui/icons/ViewList';
+import { getResources, ReduxState, useGetResourceLabel } from '@mochilabs/ra-core';
 import classnames from 'classnames';
-import { useGetResourceLabel, getResources, ReduxState } from 'ra-core';
-
+import lodashGet from 'lodash/get';
+import PropTypes from 'prop-types';
+import * as React from 'react';
+import { ReactNode } from 'react';
+import { shallowEqual, useSelector } from 'react-redux';
 import DashboardMenuItem from './DashboardMenuItem';
 import MenuItemLink from './MenuItemLink';
+
 
 export const MENU_WIDTH = 240;
 export const CLOSED_MENU_WIDTH = 55;

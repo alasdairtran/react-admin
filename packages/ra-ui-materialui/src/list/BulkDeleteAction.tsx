@@ -1,7 +1,7 @@
-import { useEffect } from 'react';
+import { crudDeleteMany, startUndoable, useResourceContext } from '@mochilabs/ra-core';
 import PropTypes from 'prop-types';
+import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { crudDeleteMany, startUndoable, useResourceContext } from 'ra-core';
 
 /**
  *@deprecated use BulkDeleteButton instead

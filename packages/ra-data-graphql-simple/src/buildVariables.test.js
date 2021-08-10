@@ -1,11 +1,8 @@
 import {
-    GET_LIST,
+    CREATE, DELETE, GET_LIST,
     GET_MANY,
-    GET_MANY_REFERENCE,
-    CREATE,
-    UPDATE,
-    DELETE,
-} from 'ra-core';
+    GET_MANY_REFERENCE, UPDATE
+} from '@mochilabs/ra-core';
 import buildVariables from './buildVariables';
 
 describe('buildVariables', () => {

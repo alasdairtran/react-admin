@@ -1,14 +1,14 @@
-import * as React from 'react';
-import { FC } from 'react';
-import PropTypes from 'prop-types';
-import get from 'lodash/get';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
+import { useRecordContext } from '@mochilabs/ra-core';
 import classnames from 'classnames';
-import { useRecordContext } from 'ra-core';
-
+import get from 'lodash/get';
+import PropTypes from 'prop-types';
+import * as React from 'react';
+import { FC } from 'react';
 import sanitizeFieldRestProps from './sanitizeFieldRestProps';
-import { PublicFieldProps, InjectedFieldProps, fieldPropTypes } from './types';
+import { fieldPropTypes, InjectedFieldProps, PublicFieldProps } from './types';
+
 
 const useStyles = makeStyles(
     {

@@ -1,10 +1,10 @@
-import * as React from 'react';
+import { DataProviderContext, undoableEventEmitter } from '@mochilabs/ra-core';
+import { renderWithRedux } from '@mochilabs/ra-test';
+import { act, fireEvent, waitFor } from '@testing-library/react';
 import expect from 'expect';
-import { waitFor, fireEvent, act } from '@testing-library/react';
-import { DataProviderContext, undoableEventEmitter } from 'ra-core';
-import { renderWithRedux } from 'ra-test';
-
+import * as React from 'react';
 import { Edit } from './Edit';
+
 
 describe('<Edit />', () => {
     const defaultEditProps = {

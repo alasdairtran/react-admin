@@ -1,41 +1,31 @@
-import React, {
-    useCallback,
-    useEffect,
-    useRef,
-    useState,
-    useMemo,
-    isValidElement,
-} from 'react';
-import Downshift, { DownshiftProps } from 'downshift';
-import get from 'lodash/get';
-import classNames from 'classnames';
 import {
-    TextField,
-    InputAdornment,
-    IconButton,
-    InputProps,
+    IconButton, InputAdornment, InputProps, TextField
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import ClearIcon from '@material-ui/icons/Clear';
 import { TextFieldProps } from '@material-ui/core/TextField';
+import ClearIcon from '@material-ui/icons/Clear';
 import {
-    useInput,
-    FieldTitle,
-    ChoicesInputProps,
-    mergeRefs,
-    useSuggestions,
+    ChoicesInputProps, FieldTitle, mergeRefs, useInput, useSuggestions,
     useTranslate,
-    warning,
-} from 'ra-core';
-
-import InputHelperText from './InputHelperText';
-import AutocompleteSuggestionList from './AutocompleteSuggestionList';
-import AutocompleteSuggestionItem from './AutocompleteSuggestionItem';
+    warning
+} from '@mochilabs/ra-core';
+import classNames from 'classnames';
+import Downshift, { DownshiftProps } from 'downshift';
+import get from 'lodash/get';
+import React, {
+    isValidElement, useCallback,
+    useEffect, useMemo, useRef,
+    useState
+} from 'react';
 import { AutocompleteInputLoader } from './AutocompleteInputLoader';
+import AutocompleteSuggestionItem from './AutocompleteSuggestionItem';
+import AutocompleteSuggestionList from './AutocompleteSuggestionList';
+import InputHelperText from './InputHelperText';
 import {
     SupportCreateSuggestionOptions,
-    useSupportCreateSuggestion,
+    useSupportCreateSuggestion
 } from './useSupportCreateSuggestion';
+
 
 /**
  * An Input component for an autocomplete field, using an array of objects for the options

@@ -1,13 +1,13 @@
-import * as React from 'react';
-import expect from 'expect';
-import { render, fireEvent } from '@testing-library/react';
-import { Form } from 'react-final-form';
-import { required, FormWithRedirect } from 'ra-core';
-import { renderWithRedux } from 'ra-test';
+import { FormWithRedirect, required } from '@mochilabs/ra-core';
+import { renderWithRedux } from '@mochilabs/ra-test';
+import { fireEvent, render } from '@testing-library/react';
 import format from 'date-fns/format';
-
-import DateInput from './DateInput';
+import expect from 'expect';
 import { FormApi } from 'final-form';
+import * as React from 'react';
+import { Form } from 'react-final-form';
+import DateInput from './DateInput';
+
 
 describe('<DateInput />', () => {
     const defaultProps = {

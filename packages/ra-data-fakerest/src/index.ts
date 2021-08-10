@@ -1,5 +1,5 @@
+import { DataProvider } from '@mochilabs/ra-core';
 import FakeRest from 'fakerest';
-import { DataProvider } from 'ra-core';
 
 /* eslint-disable no-console */
 function log(type, resource, params, response) {
@@ -21,7 +21,7 @@ function log(type, resource, params, response) {
  *
  * @example
  *
- * import fakeDataProvider from 'ra-data-fakerest';
+ * import fakeDataProvider from '@mochilabs/ra-data-fakerest';
  * const dataProvider = fakeDataProvider({
  *   posts: [
  *     { id: 0, title: 'Hello, world!' },

@@ -1,9 +1,9 @@
+import { AdminProps } from '@mochilabs/ra-core';
 import * as React from 'react';
 import { FunctionComponent } from 'react';
-import { AdminProps } from 'ra-core';
-
 import AdminContext from './AdminContext';
 import AdminUI from './AdminUI';
+
 
 /**
  * Main admin component, entry point to the application.

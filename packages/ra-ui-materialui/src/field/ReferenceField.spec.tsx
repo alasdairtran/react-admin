@@ -1,12 +1,12 @@
-import * as React from 'react';
-import expect from 'expect';
+import { DataProviderContext, RecordContextProvider } from '@mochilabs/ra-core';
+import { renderWithRedux } from '@mochilabs/ra-test';
 import { render, waitFor } from '@testing-library/react';
+import expect from 'expect';
+import * as React from 'react';
 import { MemoryRouter } from 'react-router-dom';
-import { DataProviderContext, RecordContextProvider } from 'ra-core';
-import { renderWithRedux } from 'ra-test';
-
 import ReferenceField, { ReferenceFieldView } from './ReferenceField';
 import TextField from './TextField';
+
 
 describe('<ReferenceField />', () => {
     const record = { id: 123, postId: 123 };

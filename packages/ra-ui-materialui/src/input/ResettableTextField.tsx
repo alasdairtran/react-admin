@@ -1,19 +1,17 @@
-import * as React from 'react';
-import { useCallback } from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
 import {
-    InputAdornment,
-    IconButton,
-    TextField as MuiTextField,
+    IconButton, InputAdornment, TextField as MuiTextField,
     TextFieldProps,
-    Theme,
+    Theme
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import ClearIcon from '@material-ui/icons/Clear';
-import { InputProps, useTranslate } from 'ra-core';
-import { ClassesOverride } from '../types';
 import { Styles } from '@material-ui/styles';
+import { InputProps, useTranslate } from '@mochilabs/ra-core';
+import classNames from 'classnames';
+import PropTypes from 'prop-types';
+import * as React from 'react';
+import { useCallback } from 'react';
+import { ClassesOverride } from '../types';
 
 /**
  * An override of the default Material-UI TextField which is resettable

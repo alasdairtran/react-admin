@@ -1,18 +1,18 @@
-import * as React from 'react';
-import { cloneElement, Children, ReactElement } from 'react';
-import PropTypes from 'prop-types';
 import Card from '@material-ui/core/Card';
 import { makeStyles } from '@material-ui/core/styles';
-import classnames from 'classnames';
 import {
     ShowControllerProps,
     useResourceDefinition,
-    useShowContext,
-} from 'ra-core';
-
-import { ShowActions as DefaultActions } from './ShowActions';
+    useShowContext
+} from '@mochilabs/ra-core';
+import classnames from 'classnames';
+import PropTypes from 'prop-types';
+import * as React from 'react';
+import { Children, cloneElement, ReactElement } from 'react';
 import TitleForRecord from '../layout/TitleForRecord';
 import { ShowProps } from '../types';
+import { ShowActions as DefaultActions } from './ShowActions';
+
 
 export const ShowView = (props: ShowViewProps) => {
     const {

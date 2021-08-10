@@ -1,29 +1,23 @@
-import * as React from 'react';
-import { Children, cloneElement, FC, memo, ReactElement } from 'react';
-import PropTypes from 'prop-types';
+import { Typography } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+import ErrorIcon from '@material-ui/icons/Error';
+import {
+    getResourceLinkPath,
+    LinkToType, Record, RecordContextProvider, ReduxState, ResourceContextProvider, useRecordContext, useReference,
+    UseReferenceProps
+} from '@mochilabs/ra-core';
 import classnames from 'classnames';
 import get from 'lodash/get';
-import { makeStyles } from '@material-ui/core/styles';
-import { Typography } from '@material-ui/core';
-import ErrorIcon from '@material-ui/icons/Error';
+import PropTypes from 'prop-types';
+import * as React from 'react';
+import { Children, cloneElement, FC, memo, ReactElement } from 'react';
 import { useSelector } from 'react-redux';
-import {
-    useReference,
-    UseReferenceProps,
-    getResourceLinkPath,
-    LinkToType,
-    ResourceContextProvider,
-    RecordContextProvider,
-    Record,
-    useRecordContext,
-    ReduxState,
-} from 'ra-core';
-
 import LinearProgress from '../layout/LinearProgress';
 import Link from '../Link';
-import sanitizeFieldRestProps from './sanitizeFieldRestProps';
-import { PublicFieldProps, fieldPropTypes, InjectedFieldProps } from './types';
 import { ClassesOverride } from '../types';
+import sanitizeFieldRestProps from './sanitizeFieldRestProps';
+import { fieldPropTypes, InjectedFieldProps, PublicFieldProps } from './types';
+
 
 /**
  * Fetch reference record, and delegate rendering to child component.

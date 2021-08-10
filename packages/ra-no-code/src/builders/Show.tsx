@@ -1,14 +1,14 @@
-import React from 'react';
-import { useResourceContext } from 'ra-core';
+import { useResourceContext } from '@mochilabs/ra-core';
 import {
     Show as RaShow,
     ShowProps,
     SimpleShowLayout,
-    SimpleShowLayoutProps,
-} from 'ra-ui-materialui';
+    SimpleShowLayoutProps
+} from '@mochilabs/ra-ui-materialui';
+import React from 'react';
 import {
     useResourceConfiguration,
-    useResourcesConfiguration,
+    useResourcesConfiguration
 } from '../ResourceConfiguration';
 import { getFieldFromFieldDefinition } from './getFieldFromFieldDefinition';
 

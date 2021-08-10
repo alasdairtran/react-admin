@@ -1,7 +1,7 @@
-import * as React from 'react';
-import { FC, ReactElement, ReactNode, HtmlHTMLAttributes } from 'react';
+import { FormWithRedirect, FormWithRedirectProps, MutationMode } from '@mochilabs/ra-core';
 import PropTypes from 'prop-types';
-import { FormWithRedirect, FormWithRedirectProps, MutationMode } from 'ra-core';
+import * as React from 'react';
+import { FC, HtmlHTMLAttributes, ReactElement, ReactNode } from 'react';
 import { SimpleFormView } from './SimpleFormView';
 
 /**
@@ -13,7 +13,7 @@ import { SimpleFormView } from './SimpleFormView';
  *
  * import * as React from "react";
  * import { Create, Edit, SimpleForm, TextInput, DateInput, ReferenceManyField, Datagrid, TextField, DateField, EditButton } from 'react-admin';
- * import RichTextInput from 'ra-input-rich-text';
+ * import RichTextInput from '@mochilabs/ra-input-rich-text';
  *
  * export const PostCreate = (props) => (
  *     <Create {...props}>

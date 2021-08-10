@@ -29,7 +29,7 @@ The `ra-data-graphql-simple` package exposes a single function, which is a const
 // in App.js
 import * as React from 'react';
 import { Component } from 'react';
-import buildGraphQLProvider from 'ra-data-graphql-simple';
+import buildGraphQLProvider from '@mochilabs/ra-data-graphql-simple';
 import { Admin, Resource } from 'react-admin';
 
 import { PostCreate, PostEdit, PostList } from './posts';
@@ -141,7 +141,7 @@ The default behavior might not be optimized especially when dealing with referen
 
 ```js
 // in src/dataProvider.js
-import buildGraphQLProvider, { buildQuery } from 'ra-data-graphql-simple';
+import buildGraphQLProvider, { buildQuery } from '@mochilabs/ra-data-graphql-simple';
 
 const myBuildQuery = introspection => (fetchType, resource, params) => {
     const builtQuery = buildQuery(introspection)(fetchType, resource, params);

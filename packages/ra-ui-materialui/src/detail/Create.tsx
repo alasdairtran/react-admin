@@ -1,15 +1,15 @@
-import * as React from 'react';
-import { ReactElement } from 'react';
-import PropTypes from 'prop-types';
 import {
     CreateContextProvider,
     ResourceContextProvider,
     useCheckMinimumRequiredProps,
-    useCreateController,
-} from 'ra-core';
-
+    useCreateController
+} from '@mochilabs/ra-core';
+import PropTypes from 'prop-types';
+import * as React from 'react';
+import { ReactElement } from 'react';
 import { CreateProps } from '../types';
 import { CreateView } from './CreateView';
+
 
 /**
  * Page component for the Create view

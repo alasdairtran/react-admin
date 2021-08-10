@@ -1,20 +1,17 @@
-import React, { FormEvent, useState } from 'react';
 import {
     Button,
-    Dialog,
-    DialogProps,
-    DialogActions,
+    Dialog, DialogActions,
     DialogContent,
-    DialogContentText,
-    DialogTitle,
+    DialogContentText, DialogProps, DialogTitle,
     RootRef,
-    TextField,
+    TextField
 } from '@material-ui/core';
+import { useNotify, useRefresh } from '@mochilabs/ra-core';
+import React, { FormEvent, useState } from 'react';
 import { useDropzone } from 'react-dropzone';
-
-import { useNotify, useRefresh } from 'ra-core';
 import { useHistory } from 'react-router-dom';
 import { useImportResourceFromCsv } from './useImportResourceFromCsv';
+
 
 export const ImportResourceDialog = (props: ImportResourceDialogProps) => {
     const [file, setFile] = useState<File>();

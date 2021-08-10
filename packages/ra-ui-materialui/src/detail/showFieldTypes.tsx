@@ -1,18 +1,18 @@
+import { InferredElement, InferredTypeMap, InputProps } from '@mochilabs/ra-core';
 import * as React from 'react';
 import { ReactNode } from 'react';
-import Datagrid from '../list/datagrid/Datagrid';
 import ArrayField from '../field/ArrayField';
 import BooleanField from '../field/BooleanField';
 import DateField from '../field/DateField';
 import EmailField from '../field/EmailField';
 import NumberField from '../field/NumberField';
-import ReferenceField, { ReferenceFieldProps } from '../field/ReferenceField';
 import ReferenceArrayField from '../field/ReferenceArrayField';
+import ReferenceField, { ReferenceFieldProps } from '../field/ReferenceField';
 import RichTextField from '../field/RichTextField';
-import SimpleShowLayout, { SimpleShowLayoutProps } from './SimpleShowLayout';
 import TextField from '../field/TextField';
 import UrlField from '../field/UrlField';
-import { InferredElement, InferredTypeMap, InputProps } from 'ra-core';
+import Datagrid from '../list/datagrid/Datagrid';
+import SimpleShowLayout, { SimpleShowLayoutProps } from './SimpleShowLayout';
 
 const showFieldTypes: InferredTypeMap = {
     show: {

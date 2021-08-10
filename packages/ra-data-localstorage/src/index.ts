@@ -1,6 +1,6 @@
 /* eslint-disable eqeqeq */
-import fakeRestProvider from 'ra-data-fakerest';
-import { DataProvider, Record } from 'ra-core';
+import { DataProvider, Record } from '@mochilabs/ra-core';
+import fakeRestProvider from '@mochilabs/ra-data-fakerest';
 import pullAt from 'lodash/pullAt';
 
 /**
@@ -10,12 +10,12 @@ import pullAt from 'lodash/pullAt';
  *
  * @example // initialize with no data
  *
- * import localStorageDataProvider from 'ra-data-local-storage';
+ * import localStorageDataProvider from '@mochilabs/ra-data-local-storage';
  * const dataProvider = localStorageDataProvider();
  *
  * @example // initialize with default data (will be ignored if data has been modified by user)
  *
- * import localStorageDataProvider from 'ra-data-local-storage';
+ * import localStorageDataProvider from '@mochilabs/ra-data-local-storage';
  * const dataProvider = localStorageDataProvider({
  *   defaultData: {
  *     posts: [

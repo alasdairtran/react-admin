@@ -1,11 +1,11 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import ChevronLeft from '@material-ui/icons/ChevronLeft';
 import ChevronRight from '@material-ui/icons/ChevronRight';
-import { useTranslate } from 'ra-core';
+import { useTranslate } from '@mochilabs/ra-core';
 import classnames from 'classnames';
+import PropTypes from 'prop-types';
+import * as React from 'react';
 
 const useStyles = makeStyles(
     theme => ({

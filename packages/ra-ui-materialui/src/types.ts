@@ -1,16 +1,9 @@
-import { ReactElement, ElementType } from 'react';
 import {
-    Identifier,
-    Exporter,
-    SortPayload,
-    FilterPayload,
-    Record as RaRecord,
+    Exporter, FilterPayload, Identifier, MutationMode, OnFailure, OnSuccess, Record as RaRecord,
     ResourceComponentProps,
-    ResourceComponentPropsWithId,
-    MutationMode,
-    OnSuccess,
-    OnFailure,
-} from 'ra-core';
+    ResourceComponentPropsWithId, SortPayload
+} from '@mochilabs/ra-core';
+import { ElementType, ReactElement } from 'react';
 
 export interface ListProps extends ResourceComponentProps {
     actions?: ReactElement | false;

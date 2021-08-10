@@ -1,21 +1,19 @@
+import { makeStyles } from '@material-ui/core/styles';
+import {
+    FormGroupContextProvider,
+    Record,
+    useRecordContext, useResourceContext, useTranslatableContext
+} from '@mochilabs/ra-core';
 import * as React from 'react';
 import {
     Children,
     cloneElement,
     isValidElement,
     ReactElement,
-    ReactNode,
+    ReactNode
 } from 'react';
-import {
-    FormGroupContextProvider,
-    Record,
-    useRecordContext,
-    useTranslatableContext,
-} from 'ra-core';
-import { makeStyles } from '@material-ui/core/styles';
-import { ClassesOverride } from '../types';
 import { FormInput } from '../form';
-import { useResourceContext } from 'ra-core';
+import { ClassesOverride } from '../types';
 
 /**
  * Default container for a group of translatable inputs inside a TranslatableInputs component.

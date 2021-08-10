@@ -1,26 +1,19 @@
-import * as React from 'react';
-import {
-    Children,
-    isValidElement,
-    FC,
-    ReactElement,
-    ReactNode,
-    HtmlHTMLAttributes,
-} from 'react';
-import PropTypes from 'prop-types';
 import {
     FormWithRedirect,
     FormWithRedirectProps,
-    MutationMode,
-    Record,
-    RedirectionSideEffect,
-    OnSuccess,
-    OnFailure,
-} from 'ra-core';
+    MutationMode, OnFailure, OnSuccess, Record,
+    RedirectionSideEffect
+} from '@mochilabs/ra-core';
 import get from 'lodash/get';
-
+import PropTypes from 'prop-types';
+import * as React from 'react';
+import {
+    Children, FC, HtmlHTMLAttributes, isValidElement, ReactElement,
+    ReactNode
+} from 'react';
 import { ClassesOverride } from '../types';
 import { TabbedFormView, useTabbedFormViewStyles } from './TabbedFormView';
+
 
 /**
  * Form layout where inputs are divided by tab, one input per line.

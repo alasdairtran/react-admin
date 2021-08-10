@@ -1,8 +1,8 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import { warning } from 'ra-core';
 import { makeStyles } from '@material-ui/core/styles';
+import { warning } from '@mochilabs/ra-core';
 import classnames from 'classnames';
+import PropTypes from 'prop-types';
+import * as React from 'react';
 
 const useStyles = makeStyles(
     {

@@ -1,12 +1,9 @@
-import { TypeKind } from 'graphql';
 import {
-    GET_LIST,
+    CREATE, DELETE, GET_LIST,
     GET_MANY,
-    GET_MANY_REFERENCE,
-    CREATE,
-    UPDATE,
-    DELETE,
-} from 'ra-core';
+    GET_MANY_REFERENCE, UPDATE
+} from '@mochilabs/ra-core';
+import { TypeKind } from 'graphql';
 import getResponseParser from './getResponseParser';
 
 const testListTypes = type => {

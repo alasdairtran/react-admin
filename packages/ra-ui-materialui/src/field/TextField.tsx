@@ -1,11 +1,11 @@
-import * as React from 'react';
-import { FC, memo, ElementType } from 'react';
-import get from 'lodash/get';
 import Typography, { TypographyProps } from '@material-ui/core/Typography';
-import { useRecordContext } from 'ra-core';
-
+import { useRecordContext } from '@mochilabs/ra-core';
+import get from 'lodash/get';
+import * as React from 'react';
+import { ElementType, FC, memo } from 'react';
 import sanitizeFieldRestProps from './sanitizeFieldRestProps';
-import { PublicFieldProps, InjectedFieldProps, fieldPropTypes } from './types';
+import { fieldPropTypes, InjectedFieldProps, PublicFieldProps } from './types';
+
 
 const TextField: FC<TextFieldProps> = memo<TextFieldProps>(props => {
     const { className, source, emptyText, ...rest } = props;

@@ -1,4 +1,4 @@
-import { InferredElementDescription } from 'ra-core';
+import { InferredElementDescription } from '@mochilabs/ra-core';
 import { createContext } from 'react';
 
 export const ResourceConfigurationContext = createContext<

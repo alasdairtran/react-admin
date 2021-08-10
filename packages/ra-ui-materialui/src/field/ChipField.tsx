@@ -1,14 +1,14 @@
+import Chip, { ChipProps } from '@material-ui/core/Chip';
+import { makeStyles } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
+import { useRecordContext } from '@mochilabs/ra-core';
+import classnames from 'classnames';
+import get from 'lodash/get';
 import * as React from 'react';
 import { FC, memo } from 'react';
-import get from 'lodash/get';
-import Chip, { ChipProps } from '@material-ui/core/Chip';
-import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
-import classnames from 'classnames';
-import { useRecordContext } from 'ra-core';
-
 import sanitizeFieldRestProps from './sanitizeFieldRestProps';
-import { PublicFieldProps, InjectedFieldProps, fieldPropTypes } from './types';
+import { fieldPropTypes, InjectedFieldProps, PublicFieldProps } from './types';
+
 
 const useStyles = makeStyles(
     {

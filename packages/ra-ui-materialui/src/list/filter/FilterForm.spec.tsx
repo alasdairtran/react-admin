@@ -1,12 +1,12 @@
-import expect from 'expect';
+import { minLength } from '@mochilabs/ra-core';
+import { renderWithRedux } from '@mochilabs/ra-test';
 import { fireEvent } from '@testing-library/react';
+import expect from 'expect';
 import * as React from 'react';
-import { renderWithRedux } from 'ra-test';
-import { minLength } from 'ra-core';
-
-import FilterForm, { mergeInitialValuesWithDefaultValues } from './FilterForm';
-import TextInput from '../../input/TextInput';
 import { SelectInput } from '../../input/SelectInput';
+import TextInput from '../../input/TextInput';
+import FilterForm, { mergeInitialValuesWithDefaultValues } from './FilterForm';
+
 
 describe('<FilterForm />', () => {
     const defaultProps = {

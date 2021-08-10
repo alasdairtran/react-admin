@@ -1,11 +1,11 @@
-import { render, waitFor, fireEvent } from '@testing-library/react';
-import * as React from 'react';
-import expect from 'expect';
-import { DataProvider, DataProviderContext } from 'ra-core';
-import { renderWithRedux, TestContext } from 'ra-test';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-import { Toolbar, SimpleForm } from '../form';
+import { DataProvider, DataProviderContext } from '@mochilabs/ra-core';
+import { renderWithRedux, TestContext } from '@mochilabs/ra-test';
+import { fireEvent, render, waitFor } from '@testing-library/react';
+import expect from 'expect';
+import * as React from 'react';
 import { Edit } from '../detail';
+import { SimpleForm, Toolbar } from '../form';
 import { TextInput } from '../input';
 import { DeleteWithUndoButton } from './DeleteWithUndoButton';
 

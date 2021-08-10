@@ -1,9 +1,9 @@
-import * as React from 'react';
-import expect from 'expect';
+import { RecordContextProvider } from '@mochilabs/ra-core';
 import { render } from '@testing-library/react';
-import { RecordContextProvider } from 'ra-core';
-
+import expect from 'expect';
+import * as React from 'react';
 import DateField from './DateField';
+
 
 describe('<DateField />', () => {
     it('should return null when the record is not set', () => {

@@ -1,4 +1,3 @@
-import React from 'react';
 import {
     BooleanField,
     DateField,
@@ -7,11 +6,12 @@ import {
     NumberField,
     ReferenceField,
     TextField,
-    UrlField,
-} from 'ra-ui-materialui';
+    UrlField
+} from '@mochilabs/ra-ui-materialui';
+import React from 'react';
 import {
     FieldConfiguration,
-    ResourceConfigurationMap,
+    ResourceConfigurationMap
 } from '../ResourceConfiguration';
 
 export const getFieldFromFieldDefinition = (

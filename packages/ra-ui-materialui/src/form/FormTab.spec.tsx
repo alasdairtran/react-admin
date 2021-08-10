@@ -1,11 +1,11 @@
-import * as React from 'react';
+import { SaveContextProvider, SideEffectContextProvider } from '@mochilabs/ra-core';
+import { renderWithRedux } from '@mochilabs/ra-test';
 import expect from 'expect';
-import { SaveContextProvider, SideEffectContextProvider } from 'ra-core';
-import { renderWithRedux } from 'ra-test';
-
-import { TabbedForm } from './TabbedForm';
-import { FormTab } from './FormTab';
+import * as React from 'react';
 import TextInput from '../input/TextInput';
+import { FormTab } from './FormTab';
+import { TabbedForm } from './TabbedForm';
+
 
 describe('<FormTab label="foo" />', () => {
     const saveContextValue = {

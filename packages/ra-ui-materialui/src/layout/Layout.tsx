@@ -1,32 +1,26 @@
-import React, {
-    Component,
-    createElement,
-    useEffect,
-    useRef,
-    useState,
-    ErrorInfo,
-    ReactElement,
-    ComponentType,
-    HtmlHTMLAttributes,
-} from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import classnames from 'classnames';
-import { RouteComponentProps, withRouter } from 'react-router-dom';
-import { withStyles, createStyles } from '@material-ui/core/styles';
-import { ThemeProvider } from '@material-ui/styles';
 import { ThemeOptions } from '@material-ui/core';
-import { ComponentPropType, CoreLayoutProps } from 'ra-core';
+import { createStyles, withStyles } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
+import { ComponentPropType, CoreLayoutProps } from '@mochilabs/ra-core';
+import classnames from 'classnames';
 import compose from 'lodash/flowRight';
-
+import PropTypes from 'prop-types';
+import React, {
+    Component, ComponentType, createElement, ErrorInfo, HtmlHTMLAttributes, ReactElement, useEffect,
+    useRef,
+    useState
+} from 'react';
+import { connect } from 'react-redux';
+import { RouteComponentProps, withRouter } from 'react-router-dom';
+import SkipNavigationButton from '../button/SkipNavigationButton';
+import defaultTheme from '../defaultTheme';
 import DefaultAppBar, { AppBarProps } from './AppBar';
-import DefaultSidebar from './Sidebar';
+import { createMuiTheme } from './createMuiTheme';
+import DefaultError from './Error';
 import DefaultMenu, { MenuProps } from './Menu';
 import DefaultNotification from './Notification';
-import DefaultError from './Error';
-import defaultTheme from '../defaultTheme';
-import SkipNavigationButton from '../button/SkipNavigationButton';
-import { createMuiTheme } from './createMuiTheme';
+import DefaultSidebar from './Sidebar';
+
 
 const styles = theme =>
     createStyles({

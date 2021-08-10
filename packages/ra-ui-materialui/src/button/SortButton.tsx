@@ -1,22 +1,16 @@
-import * as React from 'react';
-import { FC, ReactElement, memo } from 'react';
 import {
-    Button,
-    Menu,
-    MenuItem,
-    Tooltip,
-    IconButton,
-    useMediaQuery,
-    Theme,
+    Button, IconButton, Menu,
+    MenuItem, Theme, Tooltip, useMediaQuery
 } from '@material-ui/core';
-import SortIcon from '@material-ui/icons/Sort';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
-import { shallowEqual } from 'react-redux';
+import SortIcon from '@material-ui/icons/Sort';
 import {
-    useListSortContext,
-    useTranslate,
-    getFieldLabelTranslationArgs,
-} from 'ra-core';
+    getFieldLabelTranslationArgs, useListSortContext,
+    useTranslate
+} from '@mochilabs/ra-core';
+import * as React from 'react';
+import { FC, memo, ReactElement } from 'react';
+import { shallowEqual } from 'react-redux';
 
 /**
  * A button allowing to change the sort field and order.

@@ -1,11 +1,11 @@
-import * as React from 'react';
 import Progress, {
-    LinearProgressProps as ProgressProps,
+    LinearProgressProps as ProgressProps
 } from '@material-ui/core/LinearProgress';
-import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
+import { useTimeout } from '@mochilabs/ra-core';
 import classnames from 'classnames';
-import { useTimeout } from 'ra-core';
+import PropTypes from 'prop-types';
+import * as React from 'react';
 
 const useStyles = makeStyles(
     theme => ({

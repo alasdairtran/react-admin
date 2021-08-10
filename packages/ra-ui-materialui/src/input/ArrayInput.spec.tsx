@@ -1,13 +1,13 @@
-import * as React from 'react';
+import { minLength, required } from '@mochilabs/ra-core';
 import { fireEvent, render, waitFor } from '@testing-library/react';
-import { Form } from 'react-final-form';
 import arrayMutators from 'final-form-arrays';
-
+import * as React from 'react';
+import { Form } from 'react-final-form';
+import SimpleFormIterator from '../form/SimpleFormIterator';
 import ArrayInput from './ArrayInput';
 import NumberInput from './NumberInput';
 import TextInput from './TextInput';
-import SimpleFormIterator from '../form/SimpleFormIterator';
-import { minLength, required } from 'ra-core';
+
 
 describe('<ArrayInput />', () => {
     const onSubmit = jest.fn();

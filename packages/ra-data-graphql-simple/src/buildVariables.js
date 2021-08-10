@@ -1,16 +1,11 @@
 /* eslint-disable default-case */
 import {
-    GET_LIST,
-    GET_ONE,
-    GET_MANY,
-    GET_MANY_REFERENCE,
-    CREATE,
-    UPDATE,
-    DELETE,
-} from 'ra-core';
-
+    CREATE, DELETE, GET_LIST, GET_MANY,
+    GET_MANY_REFERENCE, GET_ONE, UPDATE
+} from '@mochilabs/ra-core';
 import getFinalType from './getFinalType';
 import isList from './isList';
+
 
 const sanitizeValue = (type, value) => {
     if (type.name === 'Int') {

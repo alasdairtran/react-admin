@@ -1,10 +1,10 @@
-import * as React from 'react';
+import { TestTranslationProvider } from '@mochilabs/ra-core';
+import { renderWithRedux } from '@mochilabs/ra-test';
+import { fireEvent, render } from '@testing-library/react';
 import expect from 'expect';
-import CheckboxGroupInput from './CheckboxGroupInput';
-import { render, fireEvent } from '@testing-library/react';
+import * as React from 'react';
 import { Form } from 'react-final-form';
-import { TestTranslationProvider } from 'ra-core';
-import { renderWithRedux } from 'ra-test';
+import CheckboxGroupInput from './CheckboxGroupInput';
 
 describe('<CheckboxGroupInput />', () => {
     const defaultProps = {

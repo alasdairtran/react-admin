@@ -1,7 +1,7 @@
-import * as React from 'react';
+import { RecordContextProvider } from '@mochilabs/ra-core';
 import { render } from '@testing-library/react';
+import * as React from 'react';
 import FunctionField from './FunctionField';
-import { RecordContextProvider } from 'ra-core';
 
 describe('<FunctionField />', () => {
     it('should render using the render function', () => {

@@ -1,19 +1,14 @@
-import * as React from 'react';
-import { FC, ReactElement, SyntheticEvent, ReactNode } from 'react';
-import PropTypes from 'prop-types';
 import {
-    Button as MuiButton,
-    Tooltip,
-    IconButton,
-    useMediaQuery,
-    PropTypes as MuiPropTypes,
+    Button as MuiButton, IconButton, PropTypes as MuiPropTypes, Theme, Tooltip, useMediaQuery
 } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
 import { ButtonProps as MuiButtonProps } from '@material-ui/core/Button';
-import { Theme } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+import { Record, RedirectionSideEffect, useTranslate } from '@mochilabs/ra-core';
 import classnames from 'classnames';
-import { Record, RedirectionSideEffect, useTranslate } from 'ra-core';
 import { LocationDescriptor } from 'history';
+import PropTypes from 'prop-types';
+import * as React from 'react';
+import { FC, ReactElement, ReactNode, SyntheticEvent } from 'react';
 
 /**
  * A generic Button with side icon. Only the icon is displayed on small screens.

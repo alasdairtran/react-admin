@@ -1,13 +1,13 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
-import { useSelector } from 'react-redux';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
 import CircularProgress from '@material-ui/core/CircularProgress';
-import { ReduxState, useRefreshWhenVisible } from 'ra-core';
-
+import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { ReduxState, useRefreshWhenVisible } from '@mochilabs/ra-core';
+import classNames from 'classnames';
+import PropTypes from 'prop-types';
+import * as React from 'react';
+import { useSelector } from 'react-redux';
 import RefreshIconButton from '../button/RefreshIconButton';
 import { ClassesOverride } from '../types';
+
 
 const LoadingIndicator = (props: LoadingIndicatorProps) => {
     const { classes: classesOverride, className, ...rest } = props;

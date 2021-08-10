@@ -1,5 +1,5 @@
+import { DataProvider, fetchUtils } from '@mochilabs/ra-core';
 import { stringify } from 'query-string';
-import { fetchUtils, DataProvider } from 'ra-core';
 
 /**
  * Maps react-admin queries to a json-server powered REST API
@@ -21,7 +21,7 @@ import { fetchUtils, DataProvider } from 'ra-core';
  *
  * import * as React from "react";
  * import { Admin, Resource } from 'react-admin';
- * import jsonServerProvider from 'ra-data-json-server';
+ * import jsonServerProvider from '@mochilabs/ra-data-json-server';
  *
  * import { PostList } from './posts';
  *

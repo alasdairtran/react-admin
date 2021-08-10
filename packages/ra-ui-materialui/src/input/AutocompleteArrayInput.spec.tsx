@@ -1,11 +1,11 @@
-import * as React from 'react';
+import { TestTranslationProvider } from '@mochilabs/ra-core';
 import { fireEvent, render, waitFor } from '@testing-library/react';
-import { Form } from 'react-final-form';
 import expect from 'expect';
-
+import * as React from 'react';
+import { Form } from 'react-final-form';
 import AutocompleteArrayInput from './AutocompleteArrayInput';
-import { TestTranslationProvider } from 'ra-core';
 import { useCreateSuggestionContext } from './useSupportCreateSuggestion';
+
 
 describe('<AutocompleteArrayInput />', () => {
     const defaultProps = {

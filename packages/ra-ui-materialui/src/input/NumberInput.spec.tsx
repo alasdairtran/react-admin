@@ -1,9 +1,9 @@
+import { required } from '@mochilabs/ra-core/lib';
+import { fireEvent, render } from '@testing-library/react';
 import * as React from 'react';
-import { render, fireEvent } from '@testing-library/react';
 import { Form } from 'react-final-form';
-import { required } from 'ra-core/lib';
-
 import NumberInput from './NumberInput';
+
 
 describe('<NumberInput />', () => {
     const defaultProps = {

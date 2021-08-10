@@ -1,9 +1,9 @@
-import * as React from 'react';
+import { DataProviderContext } from '@mochilabs/ra-core';
+import { renderWithRedux } from '@mochilabs/ra-test';
 import expect from 'expect';
-import { DataProviderContext } from 'ra-core';
-import { renderWithRedux } from 'ra-test';
-
+import * as React from 'react';
 import { Show } from './Show';
+
 
 describe('<Show />', () => {
     const defaultShowProps = {

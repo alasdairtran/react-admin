@@ -1,8 +1,8 @@
+import { AdminContextProps, CoreAdminContext } from '@mochilabs/ra-core';
 import * as React from 'react';
 import { FC } from 'react';
-import { CoreAdminContext, AdminContextProps } from 'ra-core';
-
 import defaultI18nProvider from './defaultI18nProvider';
+
 
 const AdminContext: FC<AdminContextProps> = props => (
     <CoreAdminContext {...props} />

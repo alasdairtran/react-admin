@@ -1,12 +1,12 @@
-import * as React from 'react';
-import { FC, AnchorHTMLAttributes, memo } from 'react';
-import get from 'lodash/get';
-import Typography from '@material-ui/core/Typography';
 import { Link } from '@material-ui/core';
-import { useRecordContext } from 'ra-core';
-
+import Typography from '@material-ui/core/Typography';
+import { useRecordContext } from '@mochilabs/ra-core';
+import get from 'lodash/get';
+import * as React from 'react';
+import { AnchorHTMLAttributes, FC, memo } from 'react';
 import sanitizeFieldRestProps from './sanitizeFieldRestProps';
-import { PublicFieldProps, InjectedFieldProps, fieldPropTypes } from './types';
+import { fieldPropTypes, InjectedFieldProps, PublicFieldProps } from './types';
+
 
 // useful to prevent click bubbling in a datagrid with rowClick
 const stopPropagation = e => e.stopPropagation();

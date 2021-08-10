@@ -1,23 +1,17 @@
+import {
+    InputProps, ListContextProvider,
+    ReferenceInputValue, ResourceContextProvider, useInput, UseInputValue, useReferenceInputController, warning as warningLog
+} from '@mochilabs/ra-core';
+import PropTypes from 'prop-types';
 import React, {
     Children,
     cloneElement,
     FunctionComponent,
-    ReactElement,
+    ReactElement
 } from 'react';
-import PropTypes from 'prop-types';
-import {
-    useInput,
-    useReferenceInputController,
-    InputProps,
-    warning as warningLog,
-    ListContextProvider,
-    ReferenceInputValue,
-    UseInputValue,
-    ResourceContextProvider,
-} from 'ra-core';
-
-import sanitizeInputRestProps from './sanitizeInputRestProps';
 import ReferenceError from './ReferenceError';
+import sanitizeInputRestProps from './sanitizeInputRestProps';
+
 
 /**
  * An Input component for choosing a reference record. Useful for foreign keys.

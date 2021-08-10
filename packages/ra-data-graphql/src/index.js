@@ -1,23 +1,16 @@
-import merge from 'lodash/merge';
-import get from 'lodash/get';
-import pluralize from 'pluralize';
 import {
-    GET_LIST,
-    GET_ONE,
-    GET_MANY,
-    GET_MANY_REFERENCE,
-    CREATE,
-    UPDATE,
-    DELETE,
-} from 'ra-core';
-
+    CREATE, DELETE, GET_LIST, GET_MANY,
+    GET_MANY_REFERENCE, GET_ONE, UPDATE
+} from '@mochilabs/ra-core';
+import get from 'lodash/get';
+import merge from 'lodash/merge';
+import pluralize from 'pluralize';
 import buildApolloClient from './buildApolloClient';
 import {
-    QUERY_TYPES as INNER_QUERY_TYPES,
-    MUTATION_TYPES as INNER_MUTATION_TYPES,
-    ALL_TYPES as INNER_ALL_TYPES,
+    ALL_TYPES as INNER_ALL_TYPES, MUTATION_TYPES as INNER_MUTATION_TYPES, QUERY_TYPES as INNER_QUERY_TYPES
 } from './constants';
 import defaultResolveIntrospection from './introspection';
+
 export const QUERY_TYPES = INNER_QUERY_TYPES;
 export const MUTATION_TYPES = INNER_MUTATION_TYPES;
 export const ALL_TYPES = INNER_ALL_TYPES;

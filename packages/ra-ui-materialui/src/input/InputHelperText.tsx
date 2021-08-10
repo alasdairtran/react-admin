@@ -1,6 +1,6 @@
+import { useTranslate, ValidationError, ValidationErrorMessage } from '@mochilabs/ra-core';
 import * as React from 'react';
 import { FunctionComponent } from 'react';
-import { useTranslate, ValidationError, ValidationErrorMessage } from 'ra-core';
 
 export interface InputHelperTextProps {
     helperText?: string | boolean;

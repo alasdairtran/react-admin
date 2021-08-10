@@ -1,4 +1,4 @@
-import { TranslationMessages } from 'ra-core';
+import { TranslationMessages } from '@mochilabs/ra-core';
 
 const frenchMessages: TranslationMessages = {
     ra: {

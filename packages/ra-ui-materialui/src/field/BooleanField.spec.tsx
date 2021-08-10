@@ -1,8 +1,8 @@
-import * as React from 'react';
-import expect from 'expect';
-import BooleanField from './BooleanField';
+import { RecordContextProvider } from '@mochilabs/ra-core';
 import { render } from '@testing-library/react';
-import { RecordContextProvider } from 'ra-core';
+import expect from 'expect';
+import * as React from 'react';
+import BooleanField from './BooleanField';
 
 const defaultProps = {
     record: { id: 123, published: true },

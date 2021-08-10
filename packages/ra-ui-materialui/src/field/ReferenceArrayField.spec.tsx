@@ -1,15 +1,15 @@
-import * as React from 'react';
+import { DataProviderContext, ListContextProvider } from '@mochilabs/ra-core';
+import { renderWithRedux } from '@mochilabs/ra-test';
+import { act, render, waitFor } from '@testing-library/react';
 import expect from 'expect';
-import { render, act, waitFor } from '@testing-library/react';
-import { renderWithRedux } from 'ra-test';
+import * as React from 'react';
 import { MemoryRouter } from 'react-router-dom';
-import { ListContextProvider, DataProviderContext } from 'ra-core';
-
+import SingleFieldList from '../list/SingleFieldList';
 import ReferenceArrayField, {
-    ReferenceArrayFieldView,
+    ReferenceArrayFieldView
 } from './ReferenceArrayField';
 import TextField from './TextField';
-import SingleFieldList from '../list/SingleFieldList';
+
 
 describe('<ReferenceArrayField />', () => {
     it('should render a loading indicator when related records are not yet fetched and a second has passed', async () => {

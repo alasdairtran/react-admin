@@ -1,10 +1,10 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
 import TextField, { TextFieldProps } from '@material-ui/core/TextField';
-import { useInput, FieldTitle, InputProps } from 'ra-core';
-
-import sanitizeInputRestProps from './sanitizeInputRestProps';
+import { FieldTitle, InputProps, useInput } from '@mochilabs/ra-core';
+import PropTypes from 'prop-types';
+import * as React from 'react';
 import InputHelperText from './InputHelperText';
+import sanitizeInputRestProps from './sanitizeInputRestProps';
+
 
 const leftPad = (nb = 2) => value => ('0'.repeat(nb) + value).slice(-nb);
 const leftPad4 = leftPad(4);

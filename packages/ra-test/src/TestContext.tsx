@@ -1,16 +1,16 @@
-import * as React from 'react';
-import { Component, ReactNode } from 'react';
-import { createStore, Store } from 'redux';
-import { Provider } from 'react-redux';
-import merge from 'lodash/merge';
-import { createMemoryHistory, History } from 'history';
-import { Router } from 'react-router-dom';
-
 import {
     convertLegacyDataProvider,
     createAdminStore,
-    ReduxState,
-} from 'ra-core';
+    ReduxState
+} from '@mochilabs/ra-core';
+import { createMemoryHistory, History } from 'history';
+import merge from 'lodash/merge';
+import * as React from 'react';
+import { Component, ReactNode } from 'react';
+import { Provider } from 'react-redux';
+import { Router } from 'react-router-dom';
+import { createStore, Store } from 'redux';
+
 
 export const defaultStore = {
     admin: {

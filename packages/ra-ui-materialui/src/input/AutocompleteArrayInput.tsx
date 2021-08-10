@@ -1,34 +1,27 @@
-import React, {
-    useCallback,
-    useEffect,
-    useRef,
-    useMemo,
-    isValidElement,
-} from 'react';
-import Downshift, { DownshiftProps } from 'downshift';
-import classNames from 'classnames';
-import get from 'lodash/get';
-import { TextField, Chip, InputProps } from '@material-ui/core';
+import { Chip, InputProps, TextField } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { TextFieldProps } from '@material-ui/core/TextField';
 import {
-    useInput,
-    FieldTitle,
-    ChoicesInputProps,
-    useSuggestions,
-    warning,
-    mergeRefs,
-} from 'ra-core';
+    ChoicesInputProps, FieldTitle, mergeRefs, useInput, useSuggestions,
+    warning
+} from '@mochilabs/ra-core';
+import classNames from 'classnames';
+import Downshift, { DownshiftProps } from 'downshift';
 import debounce from 'lodash/debounce';
-
-import InputHelperText from './InputHelperText';
-import AutocompleteSuggestionList from './AutocompleteSuggestionList';
-import AutocompleteSuggestionItem from './AutocompleteSuggestionItem';
+import get from 'lodash/get';
+import React, {
+    isValidElement, useCallback,
+    useEffect, useMemo, useRef
+} from 'react';
 import { AutocompleteInputLoader } from './AutocompleteInputLoader';
+import AutocompleteSuggestionItem from './AutocompleteSuggestionItem';
+import AutocompleteSuggestionList from './AutocompleteSuggestionList';
+import InputHelperText from './InputHelperText';
 import {
     SupportCreateSuggestionOptions,
-    useSupportCreateSuggestion,
+    useSupportCreateSuggestion
 } from './useSupportCreateSuggestion';
+
 
 /**
  * An Input component for an autocomplete field, using an array of objects for the options

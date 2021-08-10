@@ -1,8 +1,8 @@
+import { DELETE, DELETE_MANY, UPDATE, UPDATE_MANY } from '@mochilabs/ra-core';
+import buildDataProvider from '@mochilabs/ra-data-graphql';
 import merge from 'lodash/merge';
-import buildDataProvider from 'ra-data-graphql';
-import { DELETE, DELETE_MANY, UPDATE, UPDATE_MANY } from 'ra-core';
-
 import defaultBuildQuery from './buildQuery';
+
 const defaultOptions = {
     buildQuery: defaultBuildQuery,
 };

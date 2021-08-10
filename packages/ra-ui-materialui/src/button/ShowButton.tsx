@@ -1,11 +1,11 @@
-import * as React from 'react';
-import { FC, memo, useMemo, ReactElement } from 'react';
-import PropTypes from 'prop-types';
 import ImageEye from '@material-ui/icons/RemoveRedEye';
+import { linkToRecord, Record, useResourceContext } from '@mochilabs/ra-core';
+import PropTypes from 'prop-types';
+import * as React from 'react';
+import { FC, memo, ReactElement, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { linkToRecord, Record, useResourceContext } from 'ra-core';
-
 import Button, { ButtonProps } from './Button';
+
 
 /**
  * Opens the Show view of a given record

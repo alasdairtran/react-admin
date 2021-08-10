@@ -1,7 +1,7 @@
-import React from 'react';
-import { FormDataConsumer, InferredElementDescription } from 'ra-core';
-import { SelectInput } from 'ra-ui-materialui';
+import { FormDataConsumer, InferredElementDescription } from '@mochilabs/ra-core';
+import { SelectInput } from '@mochilabs/ra-ui-materialui';
 import get from 'lodash/get';
+import React from 'react';
 import { useResourcesConfiguration } from './useResourcesConfiguration';
 
 export const ConfigurationInputsFromFieldDefinition = ({

@@ -1,15 +1,14 @@
+import localStorageDataProvider from '@mochilabs/ra-data-local-storage';
 import React from 'react';
 import { Admin as RaAdmin, AdminProps, Resource } from 'react-admin';
-import localStorageDataProvider from 'ra-data-local-storage';
-import { Create, Edit, List, Show } from './builders';
-import {
-    useResourcesConfiguration,
-    ResourceConfigurationPage,
-    ResourceConfigurationProvider,
-} from './ResourceConfiguration';
-import { Layout, Ready } from './ui';
 import { Route } from 'react-router';
 import { useApplication } from './ApplicationContext';
+import { Create, Edit, List, Show } from './builders';
+import {
+    ResourceConfigurationPage,
+    ResourceConfigurationProvider, useResourcesConfiguration
+} from './ResourceConfiguration';
+import { Layout, Ready } from './ui';
 
 const customRoutes = [
     <Route

@@ -1,10 +1,10 @@
+import { FormGroupContextProvider, Record } from '@mochilabs/ra-core';
+import PropTypes from 'prop-types';
 import * as React from 'react';
 import { FC, ReactElement, ReactNode } from 'react';
-import PropTypes from 'prop-types';
-import { FormGroupContextProvider, Record } from 'ra-core';
-
 import FormInput from './FormInput';
 import { FormTabHeader } from './FormTabHeader';
+
 
 const hiddenStyle = { display: 'none' };
 

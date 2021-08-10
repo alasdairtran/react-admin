@@ -1,23 +1,21 @@
+import { makeStyles } from '@material-ui/core/styles';
+import { useListContext, useResourceContext } from '@mochilabs/ra-core';
+import classnames from 'classnames';
+import arrayMutators from 'final-form-arrays';
+import lodashGet from 'lodash/get';
+import lodashSet from 'lodash/set';
+import PropTypes from 'prop-types';
 import * as React from 'react';
 import {
-    useEffect,
-    useCallback,
-    useContext,
     HtmlHTMLAttributes,
-    ReactNode,
+    ReactNode, useCallback,
+    useContext, useEffect
 } from 'react';
-import PropTypes from 'prop-types';
-import { useListContext, useResourceContext } from 'ra-core';
 import { Form, FormRenderProps, FormSpy } from 'react-final-form';
-import arrayMutators from 'final-form-arrays';
-import classnames from 'classnames';
-import { makeStyles } from '@material-ui/core/styles';
-import lodashSet from 'lodash/set';
-import lodashGet from 'lodash/get';
-
-import FilterFormInput from './FilterFormInput';
 import { ClassesOverride } from '../../types';
 import { FilterContext } from '../FilterContext';
+import FilterFormInput from './FilterFormInput';
+
 
 export const FilterForm = (props: FilterFormProps) => {
     const {

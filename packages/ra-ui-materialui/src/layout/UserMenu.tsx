@@ -1,19 +1,15 @@
-import * as React from 'react';
-import { Children, cloneElement, isValidElement, useState } from 'react';
-import PropTypes from 'prop-types';
-import { useTranslate, useGetIdentity } from 'ra-core';
 import {
-    Tooltip,
-    IconButton,
-    Menu,
-    Button,
-    Avatar,
-    PopoverOrigin,
+    Avatar, Button, IconButton,
+    Menu, PopoverOrigin, Tooltip
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import AccountCircle from '@material-ui/icons/AccountCircle';
-
+import { useGetIdentity, useTranslate } from '@mochilabs/ra-core';
+import PropTypes from 'prop-types';
+import * as React from 'react';
+import { Children, cloneElement, isValidElement, useState } from 'react';
 import { ClassesOverride } from '../types';
+
 
 const defaultIcon = <AccountCircle />;
 

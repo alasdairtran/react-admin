@@ -1,10 +1,10 @@
+import { TestTranslationProvider } from '@mochilabs/ra-core';
+import { fireEvent, render, waitFor } from '@testing-library/react';
 import * as React from 'react';
-import { render, fireEvent, waitFor } from '@testing-library/react';
-
-import { AutocompleteInput } from './AutocompleteInput';
 import { Form } from 'react-final-form';
-import { TestTranslationProvider } from 'ra-core';
+import { AutocompleteInput } from './AutocompleteInput';
 import { useCreateSuggestionContext } from './useSupportCreateSuggestion';
+
 
 describe('<AutocompleteInput />', () => {
     // Fix document.createRange is not a function error on fireEvent usage (Fixed in jsdom v16.0.0)

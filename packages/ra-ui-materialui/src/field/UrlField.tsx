@@ -1,10 +1,10 @@
-import * as React from 'react';
-import { FC, AnchorHTMLAttributes, memo } from 'react';
+import { Link, Typography } from '@material-ui/core';
+import { useRecordContext } from '@mochilabs/ra-core';
 import get from 'lodash/get';
+import * as React from 'react';
+import { AnchorHTMLAttributes, FC, memo } from 'react';
 import sanitizeFieldRestProps from './sanitizeFieldRestProps';
-import { Typography, Link } from '@material-ui/core';
-import { useRecordContext } from 'ra-core';
-import { PublicFieldProps, InjectedFieldProps, fieldPropTypes } from './types';
+import { fieldPropTypes, InjectedFieldProps, PublicFieldProps } from './types';
 
 const UrlField: FC<UrlFieldProps> = memo<UrlFieldProps>(props => {
     const { className, emptyText, source, ...rest } = props;

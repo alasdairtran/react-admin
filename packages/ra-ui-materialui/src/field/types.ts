@@ -1,7 +1,7 @@
-import { ReactElement } from 'react';
-import { Record } from 'ra-core';
-import PropTypes from 'prop-types';
 import { TableCellProps } from '@material-ui/core/TableCell';
+import { Record } from '@mochilabs/ra-core';
+import PropTypes from 'prop-types';
+import { ReactElement } from 'react';
 
 type TextAlign = TableCellProps['align'];
 type SortOrder = 'ASC' | 'DESC';

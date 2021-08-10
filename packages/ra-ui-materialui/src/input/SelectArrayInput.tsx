@@ -1,31 +1,22 @@
-import * as React from 'react';
-import { useCallback, useRef, useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
 import {
-    Select,
-    MenuItem,
-    InputLabel,
-    FormHelperText,
-    FormControl,
-    Chip,
+    Chip, FormControl, FormHelperText, InputLabel, MenuItem, Select
 } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
-import classnames from 'classnames';
-import {
-    FieldTitle,
-    useInput,
-    InputProps,
-    ChoicesProps,
-    useChoices,
-} from 'ra-core';
-import InputHelperText from './InputHelperText';
-import { SelectProps } from '@material-ui/core/Select';
 import { FormControlProps } from '@material-ui/core/FormControl';
-import Labeled from './Labeled';
+import { SelectProps } from '@material-ui/core/Select';
+import { makeStyles } from '@material-ui/core/styles';
+import {
+    ChoicesProps, FieldTitle, InputProps, useChoices, useInput
+} from '@mochilabs/ra-core';
+import classnames from 'classnames';
+import PropTypes from 'prop-types';
+import * as React from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { LinearProgress } from '../layout';
+import InputHelperText from './InputHelperText';
+import Labeled from './Labeled';
 import {
     SupportCreateSuggestionOptions,
-    useSupportCreateSuggestion,
+    useSupportCreateSuggestion
 } from './useSupportCreateSuggestion';
 
 /**

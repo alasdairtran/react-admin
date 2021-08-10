@@ -1,9 +1,9 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
-import classnames from 'classnames';
 import CircularProgress from '@material-ui/core/CircularProgress';
-import { useTranslate } from 'ra-core';
+import { makeStyles } from '@material-ui/core/styles';
+import { useTranslate } from '@mochilabs/ra-core';
+import classnames from 'classnames';
+import PropTypes from 'prop-types';
+import * as React from 'react';
 
 const useStyles = makeStyles(
     theme => ({

@@ -1,9 +1,9 @@
-import * as React from 'react';
-import expect from 'expect';
+import { useTranslatableContext } from '@mochilabs/ra-core';
 import { fireEvent, render } from '@testing-library/react';
-import { TranslatableFields } from './TranslatableFields';
+import expect from 'expect';
+import * as React from 'react';
 import TextField from './TextField';
-import { useTranslatableContext } from 'ra-core';
+import { TranslatableFields } from './TranslatableFields';
 
 const record = {
     id: 123,

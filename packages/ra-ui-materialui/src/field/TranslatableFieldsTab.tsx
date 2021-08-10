@@ -1,7 +1,7 @@
-import React from 'react';
 import Tab, { TabProps } from '@material-ui/core/Tab';
-import { useTranslate } from 'ra-core';
+import { useTranslate } from '@mochilabs/ra-core';
 import { capitalize } from 'inflection';
+import React from 'react';
 
 /**
  * Single tab that selects a locale in a TranslatableFields component.

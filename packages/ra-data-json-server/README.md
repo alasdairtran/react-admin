@@ -43,7 +43,7 @@ Access-Control-Expose-Headers: X-Total-Count
 // in src/App.js
 import * as React from "react";
 import { Admin, Resource } from 'react-admin';
-import jsonServerProvider from 'ra-data-json-server';
+import jsonServerProvider from '@mochilabs/ra-data-json-server';
 
 import { PostList } from './posts';
 
@@ -64,7 +64,7 @@ That means that if you need to add custom headers to your requests, you just nee
 
 ```jsx
 import { fetchUtils, Admin, Resource } from 'react-admin';
-import jsonServerProvider from 'ra-data-json-server';
+import jsonServerProvider from '@mochilabs/ra-data-json-server';
 
 const httpClient = (url, options = {}) => {
     if (!options.headers) {

@@ -1,12 +1,12 @@
+import { Typography, TypographyProps } from '@material-ui/core';
+import { ChoicesProps, useChoices, useRecordContext } from '@mochilabs/ra-core';
+import get from 'lodash/get';
+import PropTypes from 'prop-types';
 import * as React from 'react';
 import { FC, memo } from 'react';
-import PropTypes from 'prop-types';
-import get from 'lodash/get';
-import { ChoicesProps, useChoices, useRecordContext } from 'ra-core';
-import { Typography, TypographyProps } from '@material-ui/core';
-
 import sanitizeFieldRestProps from './sanitizeFieldRestProps';
-import { PublicFieldProps, InjectedFieldProps, fieldPropTypes } from './types';
+import { fieldPropTypes, InjectedFieldProps, PublicFieldProps } from './types';
+
 
 /**
  * Display a value in an enumeration

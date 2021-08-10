@@ -1,15 +1,13 @@
+import {
+    Record, RecordContextProvider, TestTranslationProvider
+} from '@mochilabs/ra-core';
+import { renderWithRedux } from '@mochilabs/ra-test';
+import { render } from '@testing-library/react';
+import expect from 'expect';
 import * as React from 'react';
 import { FC } from 'react';
-import expect from 'expect';
-import { render } from '@testing-library/react';
-import {
-    Record,
-    TestTranslationProvider,
-    RecordContextProvider,
-} from 'ra-core';
-import { renderWithRedux } from 'ra-test';
-
 import SelectField from './SelectField';
+
 
 describe('<SelectField />', () => {
     const defaultProps = {

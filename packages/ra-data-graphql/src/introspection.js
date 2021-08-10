@@ -1,8 +1,8 @@
+import { GET_LIST, GET_ONE } from '@mochilabs/ra-core';
 import { getIntrospectionQuery } from 'graphql';
 import gql from 'graphql-tag';
-import { GET_LIST, GET_ONE } from 'ra-core';
-
 import { ALL_TYPES } from './constants';
+
 
 export const isResourceIncluded = ({ include, type }) => {
     if (Array.isArray(include)) {

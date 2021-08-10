@@ -1,10 +1,10 @@
+import DashboardIcon from '@material-ui/icons/Dashboard';
+import { useTranslate } from '@mochilabs/ra-core';
+import PropTypes from 'prop-types';
 import * as React from 'react';
 import { FC } from 'react';
-import PropTypes from 'prop-types';
-import DashboardIcon from '@material-ui/icons/Dashboard';
-import { useTranslate } from 'ra-core';
-
 import MenuItemLink from './MenuItemLink';
+
 
 const DashboardMenuItem: FC<DashboardMenuItemProps> = ({
     locale,

@@ -1,8 +1,8 @@
-import * as React from 'react';
+import { renderWithRedux } from '@mochilabs/ra-test';
 import expect from 'expect';
-import { renderWithRedux } from 'ra-test';
-
+import * as React from 'react';
 import { Create } from './Create';
+
 
 describe('<Create />', () => {
     const defaultCreateProps = {

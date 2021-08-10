@@ -1,11 +1,11 @@
-import { GET_LIST, GET_MANY, GET_MANY_REFERENCE, DELETE } from 'ra-core';
-import { QUERY_TYPES } from 'ra-data-graphql';
+import { DELETE, GET_LIST, GET_MANY, GET_MANY_REFERENCE } from '@mochilabs/ra-core';
+import { QUERY_TYPES } from '@mochilabs/ra-data-graphql';
 import { TypeKind } from 'graphql';
 import * as gqlTypes from 'graphql-ast-types-browser';
-
 import getFinalType from './getFinalType';
 import isList from './isList';
 import isRequired from './isRequired';
+
 
 export const buildFragments = introspectionResults => possibleTypes =>
     possibleTypes.reduce((acc, possibleType) => {

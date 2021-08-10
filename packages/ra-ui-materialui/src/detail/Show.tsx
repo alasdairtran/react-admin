@@ -1,15 +1,13 @@
+import {
+    ResourceContextProvider, ShowContextProvider, useCheckMinimumRequiredProps,
+    useShowController
+} from '@mochilabs/ra-core';
+import PropTypes from 'prop-types';
 import * as React from 'react';
 import { ReactElement } from 'react';
-import PropTypes from 'prop-types';
-import {
-    ShowContextProvider,
-    ResourceContextProvider,
-    useCheckMinimumRequiredProps,
-    useShowController,
-} from 'ra-core';
-
 import { ShowProps } from '../types';
 import { ShowView } from './ShowView';
+
 
 /**
  * Page component for the Show view

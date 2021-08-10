@@ -1,9 +1,9 @@
-import * as React from 'react';
+import { Record, useResourceDefinition, useShowContext } from '@mochilabs/ra-core';
 import PropTypes from 'prop-types';
-import { Record, useResourceDefinition, useShowContext } from 'ra-core';
-
+import * as React from 'react';
 import { EditButton } from '../button';
 import TopToolbar from '../layout/TopToolbar';
+
 
 const sanitizeRestProps = ({
     basePath,

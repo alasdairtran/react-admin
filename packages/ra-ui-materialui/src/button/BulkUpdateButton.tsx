@@ -1,13 +1,13 @@
+import { MutationMode } from '@mochilabs/ra-core';
+import PropTypes from 'prop-types';
 import * as React from 'react';
 import { FC } from 'react';
-import PropTypes from 'prop-types';
 import BulkUpdateWithConfirmButton, {
-    BulkUpdateWithConfirmButtonProps,
+    BulkUpdateWithConfirmButtonProps
 } from './BulkUpdateWithConfirmButton';
 import BulkUpdateWithUndoButton, {
-    BulkUpdateWithUndoButtonProps,
+    BulkUpdateWithUndoButtonProps
 } from './BulkUpdateWithUndoButton';
-import { MutationMode } from 'ra-core';
 
 /**
  * Updates the selected rows.

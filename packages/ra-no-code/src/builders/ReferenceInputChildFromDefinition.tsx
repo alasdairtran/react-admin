@@ -1,9 +1,9 @@
-import * as React from 'react';
 import {
     AutocompleteInput,
     RadioButtonGroupInput,
-    SelectInput,
-} from 'ra-ui-materialui';
+    SelectInput
+} from '@mochilabs/ra-ui-materialui';
+import * as React from 'react';
 import { ReferenceFieldConfiguration } from '../ResourceConfiguration';
 
 export const ReferenceInputChildFromDefinition = ({

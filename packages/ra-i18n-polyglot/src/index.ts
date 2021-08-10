@@ -1,6 +1,6 @@
+import { I18nProvider, TranslationMessages } from '@mochilabs/ra-core';
 import Polyglot from 'node-polyglot';
 
-import { I18nProvider, TranslationMessages } from 'ra-core';
 
 type GetMessages = (
     locale: string
@@ -12,8 +12,8 @@ type GetMessages = (
  * @example
  *
  * import { Admin, Resource, polyglotI18nProvider } from 'react-admin';
- * import englishMessages from 'ra-language-english';
- * import frenchMessages from 'ra-language-french';
+ * import englishMessages from '@mochilabs/ra-language-english';
+ * import frenchMessages from '@mochilabs/ra-language-french';
  *
  * const messages = {
  *     fr: frenchMessages,

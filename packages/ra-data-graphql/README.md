@@ -48,7 +48,7 @@ yarn add graphql ra-data-graphql
 // in App.js
 import * as React from 'react';
 import { Component } from 'react';
-import buildGraphQLProvider from 'ra-data-graphql';
+import buildGraphQLProvider from '@mochilabs/ra-data-graphql';
 import { Admin, Resource, Delete } from 'react-admin';
 
 import buildQuery from './buildQuery'; // see Specify your queries and mutations section below

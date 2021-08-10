@@ -1,5 +1,3 @@
-import * as React from 'react';
-import { useEffect, useState } from 'react';
 import {
     Avatar,
     Card,
@@ -8,23 +6,24 @@ import {
     CardHeader,
     Divider,
     IconButton,
-    Tabs,
+    Tabs
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import {
     FormWithRedirect,
     RecordContextProvider,
-    SaveContextProvider,
-} from 'ra-core';
-import { SaveButton, TextInput } from 'ra-ui-materialui';
-import {
-    ResourceConfiguration,
-    FieldConfiguration,
-} from './ResourceConfigurationContext';
-import { useResourceConfiguration } from './useResourceConfiguration';
+    SaveContextProvider
+} from '@mochilabs/ra-core';
+import { SaveButton, TextInput } from '@mochilabs/ra-ui-materialui';
+import * as React from 'react';
+import { useEffect, useState } from 'react';
 import { FieldConfigurationFormSection } from './FieldConfigurationFormSection';
 import { FieldConfigurationTab } from './FieldConfigurationTab';
+import {
+    FieldConfiguration, ResourceConfiguration
+} from './ResourceConfigurationContext';
+import { useResourceConfiguration } from './useResourceConfiguration';
 
 export const ResourceConfigurationPage = ({
     resource,

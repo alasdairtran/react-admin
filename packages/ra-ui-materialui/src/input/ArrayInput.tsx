@@ -1,19 +1,16 @@
-import * as React from 'react';
-import { cloneElement, Children, FC, ReactElement } from 'react';
-import PropTypes from 'prop-types';
+import { FormControl, FormHelperText, InputLabel } from '@material-ui/core';
 import {
-    isRequired,
-    FieldTitle,
-    composeSyncValidators,
-    InputProps,
-} from 'ra-core';
+    composeSyncValidators, FieldTitle, InputProps, isRequired
+} from '@mochilabs/ra-core';
+import PropTypes from 'prop-types';
+import * as React from 'react';
+import { Children, cloneElement, FC, ReactElement } from 'react';
 import { useFieldArray } from 'react-final-form-arrays';
-import { InputLabel, FormControl, FormHelperText } from '@material-ui/core';
-import InputHelperText from './InputHelperText';
-
-import sanitizeInputRestProps from './sanitizeInputRestProps';
-import Labeled from './Labeled';
 import { LinearProgress } from '../layout';
+import InputHelperText from './InputHelperText';
+import Labeled from './Labeled';
+import sanitizeInputRestProps from './sanitizeInputRestProps';
+
 
 /**
  * To edit arrays of data embedded inside a record, <ArrayInput> creates a list of sub-forms.

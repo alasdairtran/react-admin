@@ -58,7 +58,7 @@ Access-Control-Expose-Headers: Content-Range
 // in src/App.js
 import * as React from "react";
 import { Admin, Resource } from 'react-admin';
-import simpleRestProvider from 'ra-data-simple-rest';
+import simpleRestProvider from '@mochilabs/ra-data-simple-rest';
 
 import { PostList } from './posts';
 
@@ -79,7 +79,7 @@ That means that if you need to add custom headers to your requests, you just nee
 
 ```jsx
 import { fetchUtils, Admin, Resource } from 'react-admin';
-import simpleRestProvider from 'ra-data-simple-rest';
+import simpleRestProvider from '@mochilabs/ra-data-simple-rest';
 
 const httpClient = (url, options = {}) => {
     if (!options.headers) {
@@ -130,13 +130,13 @@ Access-Control-Expose-Headers: X-Total-Count
 ```
 
 * Use the third parameter of `simpleRestProvider` to specify the name of the header to use :
-  
+
 ```jsx
 // in src/App.js
 import * as React from "react";
 import { Admin, Resource } from 'react-admin';
-import { fetchUtils } from 'ra-core';
-import simpleRestProvider from 'ra-data-simple-rest';
+import { fetchUtils } from '@mochilabs/ra-core';
+import simpleRestProvider from '@mochilabs/ra-data-simple-rest';
 
 import { PostList } from './posts';
 

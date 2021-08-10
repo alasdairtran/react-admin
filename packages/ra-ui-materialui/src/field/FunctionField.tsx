@@ -1,11 +1,11 @@
+import Typography, { TypographyProps } from '@material-ui/core/Typography';
+import { Record, useRecordContext } from '@mochilabs/ra-core';
+import PropTypes from 'prop-types';
 import * as React from 'react';
 import { useMemo } from 'react';
-import { Record, useRecordContext } from 'ra-core';
-import PropTypes from 'prop-types';
-import Typography, { TypographyProps } from '@material-ui/core/Typography';
-
 import sanitizeFieldRestProps from './sanitizeFieldRestProps';
-import { PublicFieldProps, InjectedFieldProps, fieldPropTypes } from './types';
+import { fieldPropTypes, InjectedFieldProps, PublicFieldProps } from './types';
+
 
 /**
  * Field using a render function

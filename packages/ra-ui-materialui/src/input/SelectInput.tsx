@@ -1,29 +1,23 @@
+import MenuItem from '@material-ui/core/MenuItem';
+import { makeStyles } from '@material-ui/core/styles';
+import { TextFieldProps } from '@material-ui/core/TextField';
+import {
+    ChoicesInputProps, FieldTitle, useChoices, useInput, useTranslate, warning
+} from '@mochilabs/ra-core';
+import get from 'lodash/get';
+import PropTypes from 'prop-types';
 import * as React from 'react';
 import { useCallback } from 'react';
-import PropTypes from 'prop-types';
-import get from 'lodash/get';
-import MenuItem from '@material-ui/core/MenuItem';
-import { TextFieldProps } from '@material-ui/core/TextField';
-import { makeStyles } from '@material-ui/core/styles';
-import {
-    useInput,
-    FieldTitle,
-    useTranslate,
-    ChoicesInputProps,
-    useChoices,
-    warning,
-} from 'ra-core';
-
-import ResettableTextField, { resettableStyles } from './ResettableTextField';
-import InputHelperText from './InputHelperText';
-import sanitizeInputRestProps from './sanitizeInputRestProps';
-import Labeled from './Labeled';
 import { LinearProgress } from '../layout';
-import {
-    useSupportCreateSuggestion,
-    SupportCreateSuggestionOptions,
-} from './useSupportCreateSuggestion';
 import { ClassesOverride } from '../types';
+import InputHelperText from './InputHelperText';
+import Labeled from './Labeled';
+import ResettableTextField, { resettableStyles } from './ResettableTextField';
+import sanitizeInputRestProps from './sanitizeInputRestProps';
+import {
+    SupportCreateSuggestionOptions, useSupportCreateSuggestion
+} from './useSupportCreateSuggestion';
+
 
 /**
  * An Input component for a select box, using an array of objects for the options

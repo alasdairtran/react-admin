@@ -1,4 +1,4 @@
-import { getValuesFromRecords, inferTypeFromValues, Record } from 'ra-core';
+import { getValuesFromRecords, inferTypeFromValues, Record } from '@mochilabs/ra-core';
 import { FieldConfiguration } from './ResourceConfigurationContext';
 
 export const getFieldDefinitionsFromRecords = (

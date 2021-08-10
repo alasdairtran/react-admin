@@ -1,10 +1,10 @@
+import FormControl from '@material-ui/core/FormControl';
+import InputLabel from '@material-ui/core/InputLabel';
+import { makeStyles } from '@material-ui/core/styles';
+import { FieldTitle } from '@mochilabs/ra-core';
+import PropTypes from 'prop-types';
 import * as React from 'react';
 import { FunctionComponent, ReactElement } from 'react';
-import PropTypes from 'prop-types';
-import InputLabel from '@material-ui/core/InputLabel';
-import FormControl from '@material-ui/core/FormControl';
-import { makeStyles } from '@material-ui/core/styles';
-import { FieldTitle } from 'ra-core';
 
 const useStyles = makeStyles(
     theme => ({

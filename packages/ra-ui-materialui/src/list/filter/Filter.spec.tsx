@@ -1,9 +1,9 @@
-import * as React from 'react';
+import { ListContext } from '@mochilabs/ra-core';
 import { render } from '@testing-library/react';
-import { ListContext } from 'ra-core';
-
+import * as React from 'react';
 import TextInput from '../../input/TextInput';
 import Filter from './Filter';
+
 
 describe('<Filter />', () => {
     describe('With form context', () => {

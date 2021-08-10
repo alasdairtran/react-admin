@@ -1,5 +1,5 @@
+import { Record as RaRecord } from '@mochilabs/ra-core';
 import { createContext } from 'react';
-import { Record as RaRecord } from 'ra-core';
 
 const DatagridContext = createContext<DatagridContextValue>({});
 

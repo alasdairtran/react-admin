@@ -1,15 +1,15 @@
+import { makeStyles } from '@material-ui/core/styles';
+import { Record, useTranslatableContext } from '@mochilabs/ra-core';
 import * as React from 'react';
 import {
     Children,
     cloneElement,
     isValidElement,
     ReactElement,
-    ReactNode,
+    ReactNode
 } from 'react';
-import { useTranslatableContext, Record } from 'ra-core';
-import { makeStyles } from '@material-ui/core/styles';
-import { ClassesOverride } from '../types';
 import { Labeled } from '../input';
+import { ClassesOverride } from '../types';
 
 /**
  * Default container for a group of translatable fields inside a TranslatableFields components.

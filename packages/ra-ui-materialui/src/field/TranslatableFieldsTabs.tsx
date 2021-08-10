@@ -1,11 +1,11 @@
-import * as React from 'react';
-import { ReactElement } from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import { makeStyles } from '@material-ui/core/styles';
 import Tabs, { TabsProps } from '@material-ui/core/Tabs';
-import { useTranslatableContext } from 'ra-core';
-import { TranslatableFieldsTab } from './TranslatableFieldsTab';
+import { useTranslatableContext } from '@mochilabs/ra-core';
+import * as React from 'react';
+import { ReactElement } from 'react';
 import { AppBarProps } from '../layout';
+import { TranslatableFieldsTab } from './TranslatableFieldsTab';
 
 /**
  * Default locale selector for the TranslatableFields component. Generates a tab for each specified locale.
